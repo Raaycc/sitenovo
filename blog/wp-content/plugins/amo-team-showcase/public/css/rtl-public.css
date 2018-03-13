@@ -1,0 +1,106 @@
+/**
+ * This file overrides default public CSS styles, specifically for RTL languages
+ */
+/*==================================================================
+▐	0. INITIAL SETTINGS
+===================================================================*/
+/*==================================================================
+▐	1. GENERAL STYLES
+===================================================================*/
+/*==================================================================
+▐	2. BUTTONS
+===================================================================*/
+.amoteam-btn-rc-square {
+  right: auto;
+  left: 0;
+}
+/*==================================================================
+▐	3. MEMBER PANEL
+===================================================================*/
+.amoteam-modal .mfp-content {
+  text-align: right;
+}
+.amoteam-panel {
+  -webkit-animation-fill-mode: inherit;
+          animation-fill-mode: inherit;
+  -webkit-backface-visibility: inherit;
+          backface-visibility: inherit;
+}
+.amoteam-panel__heading {
+  float: left;
+  text-align: left;
+}
+/*  Social icons | Header
+----------------------------------*/
+.amoteam-panel__icons {
+  left: auto;
+  right: 0;
+}
+@media (max-width: 550px) {
+  .amoteam-panel__icons {
+    padding-right: inherit;
+    padding-left: 40px;
+  }
+}
+@media (max-width: 550px) {
+  .amoteam-panel__icons li {
+    float: right;
+  }
+}
+/*  Header | Post Format VARIATIONS
+----------------------------------*/
+/*  Standard, Quote  */
+.amoteam-panel-pf-standard .amoteam-panel__icons,
+.amoteam-panel-pf-quote .amoteam-panel__icons {
+  padding-right: inherit;
+  padding-left: 40px;
+}
+.amoteam-panel-pf-standard .amoteam-panel__icons li,
+.amoteam-panel-pf-quote .amoteam-panel__icons li {
+  float: right;
+}
+/*  Image  */
+.amoteam-panel-pf-image .amoteam-panel__heading {
+  right: auto;
+  left: 0;
+}
+/*  Quote  */
+.amoteam-panel__quote_wrap .amoteam-panel__quote:before {
+  content: open-quote;
+  vertical-align: -0.35em;
+  margin-right: inherit;
+  margin-left: .20em;
+}
+.amoteam-panel__quote_wrap .amoteam-panel__quote:after {
+  content: close-quote;
+  vertical-align: -0.59em;
+  margin-left: inherit;
+  margin-right: .37em;
+}
+/*==================================================================
+▐	4. SHORTCODES
+===================================================================*/
+/* 4.1 SC | Text Block
+-------------------------------------------------------------------*/
+/*  Header
+----------------------------------*/
+.amoteam-sc-text-block__header {
+  padding-left: inherit;
+  padding-right: 15px;
+  border-left: none;
+  border-right: 3px solid transparent;
+}
+.amoteam-sc-text-block__header:before {
+  left: auto;
+  right: -3px;
+  border-left: none;
+  border-right: 3px solid transparent;
+}
+/*  Title
+----------------------------------*/
+/*  When only title is present | without subtitle  */
+.amoteam-panel-sc-only-title .amoteam-sc-text-block__header {
+  padding-left: inherit;
+  padding-right: 15px;
+}
+/*# sourceMappingURL=rtl-public.css.map */

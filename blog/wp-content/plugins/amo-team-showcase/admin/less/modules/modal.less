@@ -1,0 +1,269 @@
+/*  3.2 Modal (Bootstrap)
+-------------------------------------------------------------------*/
+// * POST EDITOR SCREEN CSS *
+
+//
+// Modal
+// --------------------------------------------------
+
+// .modal-open      - body class for killing the scroll
+// .modal           - container to scroll within
+// .modal-dialog    - positioning shell for the actual modal
+// .modal-content   - actual modal w/ bg and corners and shit
+
+// Kill the scroll on the body
+.modal-open { // IN MODAL JS LIBRARY
+	overflow: hidden;
+}
+
+// Container that the modal scrolls within
+.@{p}modal {
+	display: none;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 10050;
+	//-webkit-overflow-scrolling: touch;
+
+	// Prevent Chrome on Windows from adding a focus outline. For details, see
+	// https://github.com/twbs/bootstrap/pull/10951.
+	outline: 0;
+
+	// When fading in the modal, animate it to slide down
+	//&.fade .modal-dialog {
+	//	transform: translate(0, -25%);
+	//	transition: transform 0.3s ease-out;
+	//}
+	&.in .modal-dialog {
+		transform: translateX(-50%);
+		@media ( min-width: 601px ) {
+			transform: translate(-50%, -50%);
+		}
+
+	}
+
+	// Shell div to position the modal with bottom padding
+	> .modal-dialog { // IN MODAL JS LIBRARY
+		position: absolute;
+		top: 50px;
+		left: 50%;
+		width: 250px;
+		margin: 0 !important;
+		@media ( min-width: 601px ) {
+			position: fixed;
+			width: 500px;
+			top: 50%;
+		}
+	} // > .modal-dialog
+
+
+	// Actual modal
+	.modal-content { // IN MODAL JS LIBRARY
+		position: relative;
+		background-color: @color-white;
+		border-radius: 1px;
+		box-shadow: 0 3px 9px rgba(0,0,0,.5);
+		background-clip: padding-box;
+		// Remove focus outline from opened modal
+		outline: 0;
+	}
+
+} //.modal
+
+
+/*  Modal header
+----------------------------------*/
+// Top section of the modal w/ title and dismiss
+.@{p}modal-header {
+	padding: 12px 12px 12px 20px;
+	&:extend(.amoteam-clearfix all);
+
+	background: @color-main-dark-2;
+
+	@media (min-width: 601px) {
+		text-align: center;
+		padding: 12px;
+	}
+
+} //.modal-header
+
+// Title text within header
+.@{p}modal-title {
+	margin: 0;
+	font-size: 15px;
+
+	font-weight: normal;
+	color: @color-white;
+}
+
+//// Close icon
+//.modal-header .close {
+//	margin-top: -2px;
+//}
+//
+
+
+/*  Modal body
+----------------------------------*/
+// Where all modal content resides (sibling of .modal-header and .modal-footer)
+.@{p}modal-body {
+	position: relative;
+	//padding: 15px;
+}
+
+
+.modal-open .@{p}modal {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+// Modal background
+.modal-backdrop { // IN MODAL JS LIBRARY
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	background-color: @color-real-black;
+	// Fade for backdrop
+	&.fade { opacity: 0; }
+	&.in { opacity: 0.65; }
+}
+
+// Measure scrollbar width for padding body during modal show/hide
+.modal-scrollbar-measure { // IN MODAL JS LIBRARY
+	position: absolute;
+	top: -9999px;
+	width: 50px;
+	height: 50px;
+	overflow: scroll;
+}
+
+
+/*  Modal  | SPECIFIC
+-------------------------------------------------------------------*/
+
+
+/*  Shortcode Generator Block | Specific
+----------------------------------*/
+.@{p}modal__sc-block {
+	min-height: 250px;
+
+	cursor: pointer;
+	text-align: center;
+
+	&:hover {
+		background: @color-main-dark;
+		.@{p}modal__sc-icon {
+			color: @color-main-green-2;
+		}
+		.@{p}modal__sc-title {
+			color: @color-white;
+		}
+		.@{p}modal__sc-help {
+			color: @color-white;
+			&:after {
+				border-color: @color-white;
+			}
+		}
+	} //:hover
+
+	// help link
+	a:focus {
+		box-shadow: none;
+	}
+
+} //.modal__sc-block
+
+
+.@{p}modal__sc-wrap {
+	width: 90%;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.@{p}modal__sc-icon {
+	font-size: 51px;
+	line-height: 1;
+	color: @color-middle-grey;
+} //.modal__sc-icon
+
+.@{p}modal__sc-title {
+	font-size: 18px;
+	color: @color-main-dark-2;
+	margin: 15px 0 30px;
+}
+
+.@{p}modal__sc-help {
+	position: relative;
+	font-size: 17px;
+	color: @color-middle-grey;
+
+	&:after {
+		content: ' ';
+		position: absolute;
+		display: block;
+		height: 22px;
+		width: 22px;
+		border: 1px solid @color-middle-grey;
+		top: 0;
+		left: 0;
+		transform: rotate(45deg);
+	}
+
+	&:hover {
+		color: @color-main-cyan-2 !important;
+		&:after {
+			border-color: @color-main-cyan-2 !important;
+		}
+	} //:hover
+} //.modal__sc-help
+
+
+/* Shortcode modal columns | Specific */
+.AmoTeamShortcodesModal {
+ .@{p}col-2 {
+	 // columns responsive width
+	 @media (max-width: 600px) {
+		 width: 100%;
+	 }
+
+	 // Shortcode blocks delimiters
+	 @media (min-width: 601px) {
+
+		 &:nth-child(3), &:nth-child(2) {
+			 &:before {
+				 content: ' ';
+				 position: absolute;
+				 width: 35px;
+				 height: 35px;
+				 border-color: @color-middle-grey;
+				 border-style: solid;
+			 }
+		 } // :nth-child(3), :nth-child(2)
+
+		 &:nth-child(3) {
+			 &:before {
+				 top: 0;
+				 right: 0;
+				 border-width: 1px 1px 0 0;
+			 }
+		 } //:nth-child(3)
+
+		 &:nth-child(2) {
+			 &:before {
+				 bottom: -1px;
+				 left: -1px;
+				 border-width: 0 0 1px 1px;
+			 }
+		 } //:nth-child(2)
+	 } // @media
+
+ } //.col-2
+} //.AmoTeamShortcodesModal

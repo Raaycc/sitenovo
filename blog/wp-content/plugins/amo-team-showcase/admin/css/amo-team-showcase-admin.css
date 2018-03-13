@@ -1,0 +1,958 @@
+/**
+ * Most of the CSS for admin-specific functionality is included in this file.
+ */
+/*==================================================================
+▐	0. INITIAL SETTINGS
+===================================================================*/
+/*==================================================================
+▐	1. BASE
+===================================================================*/
+@font-face {
+  font-family: 'amo-team-admin-icons';
+  src: url('../fonts/amo-team-admin-icons.eot?48897822');
+  src: url('../fonts/amo-team-admin-icons.eot?48897822#iefix') format('embedded-opentype'), url('../fonts/amo-team-admin-icons.woff2?48897822') format('woff2'), url('../fonts/amo-team-admin-icons.woff?48897822') format('woff'), url('../fonts/amo-team-admin-icons.ttf?48897822') format('truetype'), url('../fonts/amo-team-admin-icons.svg?48897822#amo-team-admin-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="amoteam-icon-"]:before,
+[class*=" amoteam-icon-"]:before {
+  font-family: "amo-team-admin-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.amoteam-icon-settings:before {
+  content: '\e800';
+}
+/* '' */
+.amoteam-icon-layout-width-default-alt:before {
+  content: '\e801';
+}
+/* '' */
+.amoteam-icon-angle-down-1:before {
+  content: '\e802';
+}
+/* '' */
+.amoteam-icon-layout-accordion-separated:before {
+  content: '\e803';
+}
+/* '' */
+.amoteam-icon-angle-up:before {
+  content: '\e804';
+}
+/* '' */
+.amoteam-icon-close:before {
+  content: '\e805';
+}
+/* '' */
+.amoteam-icon-plus:before {
+  content: '\e806';
+}
+/* '' */
+.amoteam-icon-image:before {
+  content: '\e807';
+}
+/* '' */
+.amoteam-icon-help:before {
+  content: '\e808';
+}
+/* '' */
+.amoteam-icon-layout-grid2:before {
+  content: '\e809';
+}
+/* '' */
+.amoteam-icon-shortcode:before {
+  content: '\e80a';
+}
+/* '' */
+.amoteam-icon-panel:before {
+  content: '\e80b';
+}
+/* '' */
+.amoteam-icon-doc-text:before {
+  content: '\f0f6';
+}
+/* '' */
+.amoteam-icon-graduation-cap:before {
+  content: '\f19d';
+}
+/* '' */
+/* certain icons position fix */
+.amoteam-icon-margin-fix:before {
+  margin-left: 0;
+}
+/*==================================================================
+▐	2. LAYOUT
+===================================================================*/
+/*  2.1 Layout Helpers
+-------------------------------------------------------------------*/
+.amoteam-clearfix:before,
+.amoteam-clearfix:after,
+.amoteam-row:before,
+.amoteam-row:after,
+.amoteam-nav:before,
+.amoteam-nav:after,
+.amoteam-panel__body:before,
+.amoteam-panel__body:after {
+  content: " ";
+  display: table;
+}
+.amoteam-clearfix:after,
+.amoteam-row:after,
+.amoteam-nav:after,
+.amoteam-panel__body:after {
+  clear: both;
+}
+.amoteam-margin-bottom-10 {
+  margin-bottom: 10px !important;
+}
+.amoteam-l-center-translate-v {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+/*  2.2 Layout
+-------------------------------------------------------------------*/
+[class^="amoteam"] {
+  box-sizing: border-box;
+}
+/*  Columns and Rows
+----------------------------------*/
+.amoteam-row [class*="col"] {
+  position: relative;
+  min-height: 1px;
+}
+.amoteam-col-2 {
+  float: left;
+  width: 50%;
+}
+/*==================================================================
+▐	3. MODULES
+===================================================================*/
+/*  3.1 Buttons
+-------------------------------------------------------------------*/
+.amoteam-btn {
+  padding: 8px 13px;
+  border: none;
+  background: none;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.amoteam-btn:focus {
+  color: #fff;
+  outline: none !important;
+}
+.amoteam-btn:hover {
+  color: #fff;
+}
+/*  Big panel buttons | Options
+----------------------------------*/
+.amoteam-btn--panel-big {
+  padding: 9px 14px;
+  background-color: #6d7e8f;
+}
+.amoteam-btn--panel-big:focus {
+  box-shadow: 0 0 0 1px #aecf66, 0 0 1px 1px rgba(174, 207, 102, 0.8);
+}
+.amoteam-btn--panel-big:hover {
+  background-color: #4ecdc4;
+}
+.amoteam-btn--green {
+  background-color: #aecf66;
+}
+/*  Panel button-sign | Metabox
+----------------------------------*/
+.amoteam-btn--panel-sign {
+  position: absolute;
+  height: 100%;
+  padding: 0 10px;
+  color: #4ecdc4;
+}
+.amoteam-btn--panel-sign:hover,
+.amoteam-btn--panel-sign:focus {
+  background: #556270;
+  color: #f77;
+}
+.amoteam-btn--panel-sign:disabled,
+.amoteam-btn--panel-sign[disabled] {
+  display: none;
+}
+/*  Buttons  | SPECIFIC
+-------------------------------------------------------------------*/
+/*  Panel button-sign 2 | Metabox
+----------------------------------*/
+.amoteam-btn--panel-sign--2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 35px;
+  width: 35px;
+  padding: 0;
+  background-color: #556270;
+}
+.amoteam-btn--panel-sign--2 i {
+  position: relative;
+  top: -1px;
+}
+.amoteam-panel--options .amoteam-btn--panel-sign--2 {
+  background-color: #6d7e8f;
+  color: #c7f464;
+}
+.amoteam-panel--options .amoteam-btn--panel-sign--2:hover,
+.amoteam-panel--options .amoteam-btn--panel-sign--2:focus {
+  background: #556270;
+  color: #f77;
+}
+/*  Close button | Shortcodes Modal
+----------------------------------*/
+.amoteam-btn--close-sc-modal {
+  height: 3.2em;
+  width: 3.2em;
+}
+.amoteam-btn--close-sc-modal i:before {
+  font-size: 1.2em;
+}
+/*  Metabox button with ans icon | Metabox
+----------------------------------*/
+.amoteam-btn--metabox-icon {
+  background-color: #6d7e8f;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+.amoteam-btn--metabox-icon i {
+  color: #c7f464;
+}
+.amoteam-btn--metabox-icon i:before {
+  margin-left: 10px;
+  margin-right: 0;
+}
+.amoteam-btn--metabox-icon:hover {
+  background-color: #556270;
+}
+.amoteam-btn--metabox-icon:hover i {
+  color: #4ecdc4;
+}
+/*  3.2 Tabs
+-------------------------------------------------------------------*/
+/* Base class
+---------------------------------*/
+.amoteam-nav {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.amoteam-nav > li {
+  position: relative;
+  display: block;
+  margin-bottom: 0;
+}
+.amoteam-nav > li > a {
+  position: relative;
+  display: block;
+  padding: 13px 15px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #656565;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+@media (min-width: 550px) {
+  .amoteam-nav > li > a {
+    padding: 13px 15px 13px 20px;
+  }
+}
+.amoteam-nav > li > a:hover {
+  color: #fff;
+  background-color: #aecf66;
+}
+.amoteam-nav > li > a:focus {
+  box-shadow: none;
+}
+.amoteam-nav > li [class^="amoteam-icon-"]:before,
+.amoteam-nav > li [class*=" amoteam-icon-"]:before {
+  margin-right: 10px;
+  margin-left: 0;
+}
+/*  Tabs
+----------------------------------*/
+.amoteam-tabs > li {
+  float: none;
+}
+.amoteam-tabs .active > a {
+  background-color: #6d7e8f !important;
+  color: #fff !important;
+}
+@media (max-width: 960px) {
+  .amoteam-tabs .amoteam-tab__title {
+    display: none;
+  }
+}
+/*  Tabs Content
+----------------------------------*/
+.amoteam-tabs-content > .amoteam-tab__pane {
+  display: none;
+}
+.amoteam-tabs-content > .active {
+  display: block !important;
+}
+.amoteam-tab__heading {
+  color: #6d7e8f;
+  margin-top: 0;
+  border-bottom: 1px dotted #656565;
+  padding-bottom: 0.77em;
+  margin-bottom: 1.65em;
+  font-size: 1.4em;
+}
+.amoteam-tab__desc {
+  font-size: 14px;
+  margin: -20px 0 25px;
+  font-style: italic;
+  color: #9ca1a6;
+}
+/*  Tabs variations
+----------------------------------*/
+.amoteam-tabs--arrow .active:after {
+  right: 0 !important;
+  border: 10px solid transparent !important;
+  content: ' ' !important;
+  height: 0 !important;
+  width: 0 !important;
+  position: absolute !important;
+  pointer-events: none !important;
+  border-right-color: #fff !important;
+  top: 50% !important;
+  -webkit-transform: translateY(-50%) !important;
+      -ms-transform: translateY(-50%) !important;
+          transform: translateY(-50%) !important;
+}
+.amoteam-tabs--colored > li > a {
+  color: #fff;
+}
+.amoteam-tabs--colored > li > a:hover {
+  background-color: #4ecdc4;
+}
+.amoteam-tabs--colored > li > a:focus {
+  box-shadow: none;
+}
+.amoteam-tabs--colored .active > a {
+  background-color: #aecf66 !important;
+  -webkit-transition: background-color 0.3s ease-out !important;
+  transition: background-color 0.3s ease-out !important;
+}
+/*  Section Heading | Tab
+----------------------------------*/
+.amoteam-section-heading {
+  margin-top: 2.48em;
+}
+/*  3.3 Settings/Inputs
+-------------------------------------------------------------------*/
+.amoteam-setting-group {
+  overflow: hidden;
+  margin-bottom: 35px;
+}
+@media (min-width: 700px) {
+  .amoteam-setting-group {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 700px) {
+  .amoteam-setting {
+    float: left;
+    width: 60%;
+  }
+}
+.amoteam-setting .amoteam-setting__label {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6d7e8f;
+  margin-bottom: 6px;
+}
+.amoteam-setting .amoteam-setting__input {
+  width: 100%;
+  box-shadow: none;
+  background-image: -webkit-linear-gradient(#fff, #fff), -webkit-linear-gradient(#d5d8dc, #d5d8dc);
+  background-image: linear-gradient(#fff, #fff), linear-gradient(#d5d8dc, #d5d8dc);
+  background-size: 0 1px, 100% 1px;
+  background-repeat: no-repeat;
+  background-position: center bottom, center calc(100%);
+  -webkit-transition: background 0s ease-out;
+  transition: background 0s ease-out;
+  margin: 0;
+  border: 0;
+  padding-left: 12px;
+  padding-bottom: 7px;
+  color: #656565;
+}
+.amoteam-setting .amoteam-setting__input:focus {
+  background-image: -webkit-linear-gradient(#aecf66, #aecf66), -webkit-linear-gradient(#fff, #fff);
+  background-image: linear-gradient(#aecf66, #aecf66), linear-gradient(#fff, #fff);
+  box-shadow: none;
+  background-size: 100% 1px, 100% 1px;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+}
+.amoteam-setting__desc {
+  margin-top: 10px;
+}
+@media (min-width: 700px) {
+  .amoteam-setting__desc {
+    float: left;
+    width: 40%;
+    padding-left: 50px;
+    margin-top: 0;
+  }
+}
+/*  Input - Color Picker
+----------------------------------*/
+.amoteam-setting__color-picker > label {
+  cursor: inherit;
+}
+.amoteam-setting-group .wp-picker-container {
+  display: block;
+}
+@media (max-width: 400px) {
+  .amoteam-setting-group .wp-picker-holder {
+    position: absolute;
+    left: 5%;
+  }
+}
+.amoteam-setting-group .wp-color-result {
+  height: 30px;
+  border-color: #d5d8dc;
+  margin-bottom: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.amoteam-setting-group .wp-color-result span {
+  border-radius: 0 !important;
+}
+.amoteam-setting-group .wp-color-result:focus {
+  border-color: #aecf66;
+  box-shadow: none;
+}
+.amoteam-setting-group .wp-color-result:focus:after {
+  border-color: #aecf66;
+}
+.amoteam-setting-group .wp-color-result:after {
+  height: 30px;
+  border-color: #d5d8dc;
+  padding: 0 10px;
+  color: #556270;
+  line-height: 30px;
+  border-radius: 0;
+}
+.amoteam-setting-group .wp-color-result:hover {
+  border-color: #a6b1bc;
+}
+.amoteam-setting-group .wp-color-result:hover:after {
+  color: #556270;
+  border-color: #a6b1bc;
+}
+/*  Switcher input - ON / OFF
+----------------------------------*/
+.amoteam-setting--switch {
+  overflow: hidden;
+}
+.amoteam-setting--switch .amoteam-setting__input-switch {
+  display: none;
+}
+.amoteam-setting--switch .amoteam-setting__input-switch:checked + .amoteam-setting__label-switch {
+  background-color: #aecf66;
+  color: #fff;
+}
+.amoteam-setting--switch .amoteam-setting__input-switch:checked + .amoteam-setting__label-switch:last-of-type {
+  background-color: #6d7e8f;
+}
+.amoteam-setting--switch .amoteam-setting__label-switch {
+  float: left;
+  display: inline-block;
+  min-width: 45px;
+  padding: 6px 6px;
+  background-color: #edf1f7;
+  font-size: 13px;
+  color: #556270;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border: 1px solid #d5d8dc;
+}
+.amoteam-setting--switch .amoteam-setting__label-switch:first-of-type {
+  border-right: none;
+}
+.amoteam-setting--switch .amoteam-setting__label-switch:last-of-type {
+  border-left: none;
+}
+/*  Select Input field
+----------------------------------*/
+.amoteam-setting--select .amoteam-setting__label {
+  margin-bottom: 3px;
+}
+select.amoteam-setting__input {
+  padding: 0;
+  padding-bottom: 0 !important;
+  line-height: 31px;
+  height: 31px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+.amoteam-setting__wrap {
+  position: relative;
+}
+.amoteam-setting__wrap .amoteam-icon-angle-down-1 {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 12px;
+  color: #656565;
+  pointer-events: none;
+}
+/*  Upload Input field
+----------------------------------*/
+.amoteam-setting-group--upload__img-wrap {
+  position: relative;
+  max-width: 300px;
+  overflow: hidden;
+}
+.amoteam-setting-group--upload__img {
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+/*  Grouped Fields | group field type
+----------------------------------*/
+.amoteam-grouped-fields .amoteam-btn--metabox-icon {
+  margin-top: 12px;
+}
+.amoteam-grouped-fields__wrap {
+  margin: 0;
+}
+.amoteam-grouped-fields__group {
+  margin-bottom: 10px;
+  background: #fff;
+}
+.amoteam-grouped-fields__group .amoteam-grouped-fields__heading-wrap {
+  position: relative;
+}
+.amoteam-grouped-fields__group .amoteam-grouped-fields__heading-wrap h4 {
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 14px;
+  background: #6d7e8f;
+  color: #fff;
+  cursor: move;
+}
+.amoteam-grouped-fields__group .amoteam-grouped-fields__heading-wrap h4:focus {
+  outline: none;
+  background-color: #556270;
+}
+.amoteam-grouped-fields__group .amoteam-grouped-fields__heading-wrap h4:hover {
+  background-color: #556270;
+}
+.amoteam-grouped-fields__group .amoteam-grouped-fields__heading-wrap .amoteam-grouped-fields__collapse {
+  right: 0;
+  color: #c7f464;
+}
+.amoteam-grouped-fields__group .amoteam-grouped-fields__heading-wrap .amoteam-grouped-fields__collapse:hover,
+.amoteam-grouped-fields__group .amoteam-grouped-fields__heading-wrap .amoteam-grouped-fields__collapse:focus {
+  color: #fff;
+}
+.amoteam-grouped-fields__group .amoteam-grouped-fields__heading-wrap .amoteam-grouped-fields__close {
+  right: 38px;
+}
+.amoteam-grouped-fields__group .amoteam-grouped-fields__heading-wrap.ui-accordion-header-active .amoteam-grouped-fields__collapse-icon:before {
+  content: '\e804';
+}
+.amoteam-grouped-fields__group .amoteam-grouped-fields__content {
+  padding: 20px 25px 12px;
+  border: 1px solid #d5d8dc;
+  border-top: none;
+  overflow: hidden;
+}
+.amoteam-grouped-fields__group .amoteam-grouped-fields__content > div + div {
+  margin-top: 30px;
+}
+.amoteam-grouped-fields__group .amoteam-setting,
+.amoteam-grouped-fields__group .amoteam-setting__desc {
+  float: none;
+  width: 100%;
+}
+.amoteam-grouped-fields__group .amoteam-setting__desc {
+  padding-left: 0;
+  margin-top: 5px;
+  color: #9ca1a6;
+}
+.amoteam-grouped-fields__group .amoteam-setting__label {
+  display: none;
+}
+.amoteam-grouped-fields__content .amoteam-setting-group--upload img {
+  padding: 12px;
+  display: block;
+  margin: 0 auto;
+  max-width: 80px;
+}
+.amoteam-grouped-fields__content .amoteam-setting-group--upload .amoteam-setting-group--upload__img-wrap {
+  max-width: 100%;
+  background: #d5d8dc;
+}
+.amoteam-grouped-fields__content .amoteam-setting-group--upload .amoteam-js-media-library-upload {
+  width: 100%;
+}
+/*  Social Icons | Special Block
+----------------------------------*/
+.amoteam-social-icons .amoteam-btn--metabox-icon {
+  margin-top: 12px;
+}
+.amoteam-social-icons__wrap {
+  margin: 0;
+}
+.amoteam-social-icon__group {
+  margin-bottom: 10px;
+  background: #fff;
+}
+.amoteam-social-icon__group .amoteam-social-icon__heading-wrap {
+  position: relative;
+}
+.amoteam-social-icon__group .amoteam-social-icon__heading-wrap h4 {
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 14px;
+  background: #6d7e8f;
+  color: #fff;
+  cursor: move;
+}
+.amoteam-social-icon__group .amoteam-social-icon__heading-wrap h4:focus {
+  outline: none;
+  background-color: #556270;
+}
+.amoteam-social-icon__group .amoteam-social-icon__heading-wrap h4:hover {
+  background-color: #556270;
+}
+.amoteam-social-icon__group .amoteam-social-icon__heading-wrap .amoteam-social-icon__collapse {
+  right: 0;
+  color: #c7f464;
+}
+.amoteam-social-icon__group .amoteam-social-icon__heading-wrap .amoteam-social-icon__collapse:hover,
+.amoteam-social-icon__group .amoteam-social-icon__heading-wrap .amoteam-social-icon__collapse:focus {
+  color: #fff;
+}
+.amoteam-social-icon__group .amoteam-social-icon__heading-wrap .amoteam-social-icon__close {
+  right: 38px;
+}
+.amoteam-social-icon__group .amoteam-social-icon__heading-wrap.ui-accordion-header-active .amoteam-social-icon__collapse-icon:before {
+  content: '\e804';
+}
+.amoteam-social-icon__group .amoteam-social-icon__content {
+  padding: 20px 25px 45px;
+  border: 1px solid #d5d8dc;
+  border-top: none;
+  overflow: hidden;
+}
+.amoteam-social-icon__group .amoteam-social-icon__content > div + div {
+  margin-top: 30px;
+}
+.amoteam-social-icon__group .amoteam-social-ico__desc {
+  margin-top: 5px;
+  color: #9ca1a6;
+}
+/*  3.4 Warnings / Notices
+-------------------------------------------------------------------*/
+.amoteam-general-warning {
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+}
+/*  JS Required | Warning
+----------------------------------*/
+.amoteam-no-js-warning {
+  padding: 15px 0;
+  background-color: #f77;
+}
+/*  Plugin options/settings Notice
+----------------------------------*/
+.amoteam-settings-notice {
+  max-width: 1200px !important;
+}
+/* Metabox | Notice
+----------------------------------*/
+.amoteam-grouped-fields__limit-warning {
+  padding: 10px 10px;
+  background-color: #4ecdc4;
+  margin-bottom: 20px;
+}
+@media (min-width: 700px) {
+  .amoteam-grouped-fields__limit-warning {
+    float: left;
+    width: 60%;
+    clear: both;
+  }
+}
+/*  3.5 Text
+-------------------------------------------------------------------*/
+.amoteam-text {
+  color: #656565;
+  line-height: 1.47;
+}
+/*  3.6 Links
+-------------------------------------------------------------------*/
+.amoteam-link {
+  text-decoration: none;
+  color: #4ecdc4;
+}
+.amoteam-link:hover,
+.amoteam-link:focus {
+  color: #aecf66;
+  text-decoration: underline;
+}
+/* 3.7 Panel
+-------------------------------------------------------------------*/
+.amoteam-panel {
+  min-height: 600px;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+}
+.amoteam-panel__heading {
+  min-height: 70px;
+  padding: 0 20px;
+  overflow: hidden;
+  background-color: #556270;
+}
+.amoteam-panel__title {
+  float: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 24px 0 0;
+  font-size: 21px;
+  font-weight: 400;
+  color: #fff;
+}
+@media (min-width: 446px) {
+  .amoteam-panel__title {
+    padding: 24px 0 5px;
+  }
+}
+@media (min-width: 660px) {
+  .amoteam-panel__title {
+    padding: 24px 0 24px;
+  }
+}
+.amoteam-panel__title span {
+  color: #c7f464;
+}
+.amoteam-panel__body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.amoteam-panel__sidebar {
+  position: absolute;
+  width: 50px;
+  min-height: 500px;
+  height: 100%;
+}
+@media (min-width: 550px) {
+  .amoteam-panel__sidebar {
+    width: 65px;
+  }
+}
+@media (min-width: 961px) {
+  .amoteam-panel__sidebar {
+    width: 175px;
+  }
+}
+.amoteam-panel__content {
+  padding: 30px 20px 0 20px;
+  margin: 0 0 200px 50px;
+}
+@media (min-width: 446px) {
+  .amoteam-panel__content {
+    margin: 0 0 130px 50px;
+  }
+}
+@media (min-width: 550px) {
+  .amoteam-panel__content {
+    margin: 0 0 130px 65px;
+  }
+}
+@media (min-width: 961px) {
+  .amoteam-panel__content {
+    padding: 30px 20px 0 35px;
+    margin: 0 0 140px 175px;
+  }
+}
+.amoteam-panel__footer {
+  padding: 0 20px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+@media (max-width: 639px) {
+  .amoteam-panel__footer {
+    padding: 0 20px 3px 20px;
+    width: 100%;
+    background: #556270;
+  }
+}
+.amoteam-panel__buttons {
+  overflow: hidden;
+}
+.amoteam-panel__buttons > .amoteam-btn {
+  display: block;
+  float: left;
+  margin-left: 5px;
+}
+/*  Options Panel
+----------------------------------*/
+/* Option Panel specific styles */
+.amoteam-panel--options {
+  max-width: 1200px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+.amoteam-panel--options .amoteam-panel__sidebar {
+  position: absolute;
+  width: 50px;
+  min-height: 500px;
+  height: 100%;
+  background-color: #6d7e8f;
+}
+@media (min-width: 550px) {
+  .amoteam-panel--options .amoteam-panel__sidebar {
+    width: 65px;
+  }
+}
+@media (min-width: 961px) {
+  .amoteam-panel--options .amoteam-panel__sidebar {
+    width: 175px;
+  }
+}
+.amoteam-panel--options .amoteam-panel__buttons {
+  padding: 20px 0;
+  float: left;
+  clear: both;
+}
+.amoteam-panel--options .amoteam-panel__buttons > .amoteam-btn:first-child {
+  margin-left: 0;
+}
+@media (max-width: 445px) {
+  .amoteam-panel--options .amoteam-panel__buttons > .amoteam-btn {
+    float: none;
+    margin-left: 0;
+    margin-top: 5px;
+  }
+}
+@media (min-width: 640px) {
+  .amoteam-panel--options .amoteam-panel__buttons {
+    float: right;
+    padding: 17.5px 0 17.5px 15px;
+    clear: none;
+  }
+}
+.amoteam-plugin-version {
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+  z-index: 10;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+@media (min-width: 446px) {
+  .amoteam-plugin-version {
+    left: 0;
+    bottom: 100px;
+    width: 50px;
+    font-size: 12px;
+  }
+}
+@media (min-width: 550px) {
+  .amoteam-plugin-version {
+    width: 65px;
+  }
+}
+@media (min-width: 640px) {
+  .amoteam-plugin-version {
+    bottom: 30px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 961px) {
+  .amoteam-plugin-version {
+    width: 175px;
+    font-size: 14px;
+  }
+}
+/*  Team Member metabox
+----------------------------------*/
+/* Team Member metabox specific styles */
+#amo-team-member-settings h2 {
+  border: none;
+  background: #556270;
+  color: #fff;
+  text-transform: uppercase;
+}
+#amo-team-member-settings .inside {
+  margin: 0;
+  padding: 0;
+}
+#amo-team-member-settings .amoteam-panel__sidebar {
+  margin-top: 30px;
+  border-right: 1px solid #d5d8dc;
+}
+#amo-team-member-settings .amoteam-panel__content {
+  padding-right: 0;
+}
+#amo-team-member-settings .toggle-indicator {
+  color: #fff;
+}
+#amo-team-member-settings .toggle-indicator:hover {
+  color: #c7f464;
+}
+/*==================================================================
+▐	4. STATES
+===================================================================*/
+/*  4.1 Transitions and Animations
+-------------------------------------------------------------------*/
+/*  Transitions
+----------------------------------*/
+.amoteam-transition-0 {
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+/*==================================================================
+▐	5. THEME
+===================================================================*/
+/*==================================================================
+▐	000. TEMPORARY FIXES
+===================================================================*/
+/*# sourceMappingURL=amo-team-showcase-admin.css.map */

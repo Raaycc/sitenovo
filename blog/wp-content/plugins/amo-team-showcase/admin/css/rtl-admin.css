@@ -1,0 +1,244 @@
+/**
+ * This file overrides default admin CSS styles, specifically for RTL languages
+ */
+/*==================================================================
+▐	0. INITIAL SETTINGS
+===================================================================*/
+/*==================================================================
+▐	1. GENERAL STYLES
+===================================================================*/
+.amoteam-shortcodes-button > span {
+  padding-right: 0;
+  padding-left: 0.27em;
+}
+/*==================================================================
+▐	2. OPTIONS PAGE
+===================================================================*/
+/* 2.1 Panel | general styles
+-------------------------------------------------------------------*/
+.amoteam-panel__title {
+  float: right;
+}
+.amoteam-panel__content {
+  padding: 30px 20px 0 20px;
+  margin: 0 50px 200px 0;
+}
+@media (min-width: 446px) {
+  .amoteam-panel__content {
+    margin: 0 50px 130px 0;
+  }
+}
+@media (min-width: 550px) {
+  .amoteam-panel__content {
+    margin: 0 65px 130px 0;
+  }
+}
+@media (min-width: 961px) {
+  .amoteam-panel__content {
+    padding: 30px 35px 0 20px;
+    margin: 0 175px 140px 0;
+  }
+}
+.amoteam-panel__footer {
+  right: auto;
+  left: 0;
+}
+.amoteam-panel__buttons > .amoteam-btn {
+  float: right;
+  margin-left: 0;
+  margin-right: 5px;
+}
+/* 2.2 Options Panel | specific styles
+-------------------------------------------------------------------*/
+.amoteam-panel--options .amoteam-panel__buttons {
+  float: right;
+}
+.amoteam-panel--options .amoteam-panel__buttons > .amoteam-btn:first-child {
+  margin-left: auto;
+  margin-right: 0;
+}
+@media (max-width: 445px) {
+  .amoteam-panel--options .amoteam-panel__buttons > .amoteam-btn {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+@media (min-width: 640px) {
+  .amoteam-panel--options .amoteam-panel__buttons {
+    float: left;
+    padding: 17.5px 15px 17.5px 0;
+  }
+}
+.amoteam-plugin-version {
+  right: auto;
+  left: 20px;
+}
+@media (min-width: 446px) {
+  .amoteam-plugin-version {
+    left: auto;
+    right: 0;
+  }
+}
+/*  2.3 Settings/Inputs
+-------------------------------------------------------------------*/
+/*==================================================================
+▐	4. SETTINGS / INPUTS
+===================================================================*/
+@media (min-width: 700px) {
+  .amoteam-setting {
+    float: right;
+  }
+}
+.amoteam-setting .amoteam-setting__input {
+  padding-left: inherit;
+  padding-right: 12px;
+}
+@media (min-width: 700px) {
+  .amoteam-setting__desc {
+    float: right;
+    padding-left: inherit;
+    padding-right: 50px;
+  }
+}
+/*  Input - Color Picker
+----------------------------------*/
+@media (max-width: 400px) {
+  .amoteam-setting-group .wp-picker-holder {
+    left: auto;
+    right: 5%;
+  }
+}
+/*  Switcher input - ON / OFF
+----------------------------------*/
+.amoteam-setting--switch .amoteam-setting__label-switch {
+  float: right;
+}
+.amoteam-setting--switch .amoteam-setting__label-switch:first-of-type {
+  border-right: 1px solid #d5d8dc;
+  border-left: none;
+}
+.amoteam-setting--switch .amoteam-setting__label-switch:last-of-type {
+  border-left: 1px solid #d5d8dc;
+  border-right: none;
+}
+/*  Select Input field
+----------------------------------*/
+.amoteam-setting__wrap .amoteam-icon-angle-down-1 {
+  left: 5px;
+  right: auto;
+}
+/*  Social Icons | Special Block
+----------------------------------*/
+.amoteam-social-icon__group .amoteam-social-icon__heading-wrap .amoteam-social-icon__collapse {
+  right: auto;
+  left: 0;
+}
+.amoteam-social-icon__group .amoteam-social-icon__heading-wrap .amoteam-social-icon__close {
+  right: auto;
+  left: 38px;
+}
+/*==================================================================
+▐	4. TABS
+===================================================================*/
+/* Base class
+---------------------------------*/
+.amoteam-nav {
+  padding-left: inherit;
+  padding-right: 0;
+}
+@media (min-width: 550px) {
+  .amoteam-nav > li > a {
+    padding: 13px 20px 13px 15px;
+  }
+}
+.amoteam-nav > li [class^="amoteam-icon-"]:before,
+.amoteam-nav > li [class*=" amoteam-icon-"]:before {
+  margin-right: 0;
+  margin-left: 10px;
+}
+/*  Tabs variations
+----------------------------------*/
+.amoteam-tabs--arrow .active:after {
+  right: auto !important;
+  left: 0 !important;
+  border-right-color: transparent !important;
+  border-left-color: #fff !important;
+}
+/*==================================================================
+▐	5. TEAM MEMBER | SETTINGS
+===================================================================*/
+/* Team Member metabox specific styles */
+#amo-team-member-settings .amoteam-panel__sidebar {
+  border-right: none;
+  border-left: 1px solid #d5d8dc;
+}
+#amo-team-member-settings .amoteam-panel__content {
+  padding: 30px 35px 0 0;
+}
+/*==================================================================
+▐	7. WARNINGS / NOTICES
+===================================================================*/
+/* Metabox | Notice
+----------------------------------*/
+@media (min-width: 700px) {
+  .amoteam-social-icons__limit-warning {
+    float: right;
+  }
+}
+/*==================================================================
+▐	8. ADMIN ICONIC FONT
+===================================================================*/
+.amoteam-icon-margin-fix:before {
+  margin-left: auto;
+  margin-right: -10px;
+}
+/*==================================================================
+▐	9. LAYOUT
+===================================================================*/
+/*  Columns and Rows
+----------------------------------*/
+.amoteam-col-2 {
+  float: right;
+  width: 50%;
+}
+/*==================================================================
+▐	10. MODAL
+===================================================================*/
+/*  Modal header
+----------------------------------*/
+.amoteam-modal-header {
+  padding: 12px 20px 12px 12px;
+}
+/*  Shortcode Generator Block | Specific
+----------------------------------*/
+.amoteam-modal__sc-help:after {
+  top: -1px;
+}
+/* Shortcode modal columns | Specific */
+@media (min-width: 601px) {
+  .AmoTeamShortcodesModal .amoteam-col-2:nth-child(3):before {
+    top: 0;
+    right: auto;
+    left: 0;
+    border-width: 1px 0 0 1px;
+  }
+  .AmoTeamShortcodesModal .amoteam-col-2:nth-child(2):before {
+    bottom: -1px;
+    left: auto;
+    right: -1px;
+    border-width: 0 1px 1px 0;
+  }
+}
+/*==================================================================
+▐	11. BUTTONS
+===================================================================*/
+/*  Metabox button with ans icon | Metabox
+----------------------------------*/
+.amoteam-btn--metabox-icon i {
+  color: #c7f464;
+}
+.amoteam-btn--metabox-icon i:before {
+  margin-left: 0;
+  margin-right: 10px;
+}
+/*# sourceMappingURL=rtl-admin.css.map */

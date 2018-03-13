@@ -1,0 +1,145 @@
+
+/**
+ * This file overrides default public CSS styles, specifically for RTL languages
+ */
+
+/*==================================================================
+▐	0. INITIAL SETTINGS
+===================================================================*/
+// Variables
+@import 'base/_variables';
+
+/*==================================================================
+▐	1. GENERAL STYLES
+===================================================================*/
+
+/*==================================================================
+▐	2. BUTTONS
+===================================================================*/
+.@{p}btn-rc-square {
+	right: auto;
+	left:  0;
+}
+
+/*==================================================================
+▐	3. MEMBER PANEL
+===================================================================*/
+.@{p}modal .mfp-content {
+	text-align: right;
+}
+
+.@{p}panel {
+	animation-fill-mode: inherit;
+	backface-visibility: inherit; //causes BUGS in RTL language in Chrome
+
+} // .panel-container
+
+.@{p}panel__heading {
+	float: left;
+	text-align: left;
+} //.panel__heading
+
+
+
+/*  Social icons | Header
+----------------------------------*/
+.@{p}panel__icons {
+	left: auto;
+	right: 0;
+
+	@media (max-width: 550px) {
+		padding-right: inherit;
+		padding-left: 40px;
+	}
+
+	li {
+		@media (max-width: 550px) {
+			float: right;
+		}
+	}
+} // .panel__icons
+
+
+/*  Header | Post Format VARIATIONS
+----------------------------------*/
+/*  Standard, Quote  */
+.@{p}panel-pf-standard, .@{p}panel-pf-quote {
+
+	.@{p}panel__icons {
+		padding-right: inherit;
+		padding-left: 40px;
+
+		li {
+			float: right;
+		}
+	} // .panel__icons, .panel__standard
+
+} // .panel-pf-standard, .panel-pf-quote
+
+
+/*  Image  */
+.@{p}panel-pf-image {
+
+	.@{p}panel__heading {
+		right: auto;
+		left: 0;
+	}
+
+} // .panel-pf-image
+
+/*  Quote  */
+.@{p}panel__quote_wrap {
+
+	.@{p}panel__quote {
+		&:before {
+			content: open-quote;
+			vertical-align: -.35em;
+			margin-right: inherit;
+			margin-left: .20em;
+		}
+
+		&:after {
+			content: close-quote;
+			vertical-align: -.59em;
+			margin-left: inherit;
+			margin-right: .37em;
+		}
+	}
+} //.panel__quote_wrap
+
+
+/*==================================================================
+▐	4. SHORTCODES
+===================================================================*/
+// variables
+@panel-sc-heading-border-width: 3px;
+
+/* 4.1 SC | Text Block
+-------------------------------------------------------------------*/
+/*  Header
+----------------------------------*/
+.@{p}sc-text-block__header {
+	padding-left: inherit;
+	padding-right: 15px;
+	border-left: none;
+	border-right: @panel-sc-heading-border-width solid transparent;
+
+	&:before {
+		left: auto;
+		right: -@panel-sc-heading-border-width;
+		border-left: none;
+		border-right: @panel-sc-heading-border-width solid transparent;
+	}
+} // .sc-bio__header
+
+/*  Title
+----------------------------------*/
+/*  When only title is present | without subtitle  */
+.@{p}panel-sc-only-title {
+
+	.@{p}sc-text-block__header {
+		padding-left: inherit;
+		padding-right: 15px;
+	}
+
+} // .bio-only-title

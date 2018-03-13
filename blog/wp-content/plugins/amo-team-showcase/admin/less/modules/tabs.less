@@ -1,0 +1,163 @@
+/*  3.2 Tabs
+-------------------------------------------------------------------*/
+
+/* Base class
+---------------------------------*/
+.@{p}nav {
+	margin: 0;
+	padding-left: 0; // Override default ul/ol
+	list-style: none;
+	&:extend(.amoteam-clearfix all);
+
+	> li {
+		position: relative;
+		display: block;
+		margin-bottom: 0;
+
+		> a {
+			position: relative;
+			display: block;
+			padding: 13px 15px;
+
+			@media (min-width: 550px) {
+				padding: 13px 15px 13px 20px;
+			}//@media
+
+
+			font-size: 15px;
+			//font-weight: @font-weight-bold;
+			text-decoration: none;
+			color: @color-black;
+			.transition-main();
+
+			&:hover {
+				color: @color-white;
+				background-color: @color-main-green;
+			}
+			&:focus {
+				box-shadow: none;
+			}
+		} //a
+
+		[class^="@{p}icon-"]:before, [class*=" @{p}icon-"]:before {
+			margin-right: 10px;
+			margin-left: 0;
+		} // [class]
+
+		} // > li
+} //.nav
+
+
+/*  Tabs
+----------------------------------*/
+.@{p}tabs {
+
+	> li {
+		float: none;
+	} //li
+
+	// Active <li> state
+	.active {
+		> a {
+			background-color: @color-main-dark-2 !important;
+			color: @color-white !important;
+		}
+
+	} //.tab-active <li>
+
+	.@{p}tab__title {
+		@media (max-width: @media-max-breaker) {
+			display: none;
+		}
+	} //.tab-title
+
+} //.tabs
+
+
+/*  Tabs Content
+----------------------------------*/
+// Hide tabbable panes to start, show them when `.active`
+.@{p}tabs-content {
+	> .@{p}tab__pane {
+		display: none;
+	}
+	> .active {
+		display: block !important;
+	}
+} // .tabs-content
+
+.@{p}tab__heading {
+	color: @color-main-dark-2;
+	margin-top: 0;
+	border-bottom: 1px dotted @color-black;
+	padding-bottom: 0.77em;
+	margin-bottom: 1.65em;
+	font-size: 1.4em;
+}
+
+.@{p}tab__desc {
+	font-size: 14px;
+	margin: -20px 0 25px;
+
+	font-style: italic;
+	color: @color-dark-grey;
+}
+
+/*  Tabs variations
+----------------------------------*/
+.@{p}tabs--arrow {
+	// Active state
+	.active {
+
+		&:after {
+			right: 0 !important;
+			border: 10px solid transparent !important;
+			content: ' ' !important;
+			height: 0 !important;
+			width: 0 !important;
+			position: absolute !important;
+			pointer-events: none !important;
+			border-right-color: @color-white !important;
+			.center-translate(v) !important;
+
+		} //:after
+	} //.tab-active
+} //.tabs--arrow
+
+.@{p}tabs--colored {
+	> li {
+		> a {
+			color: @color-white;
+
+			&:hover {
+				background-color: @color-main-cyan;
+			}
+			&:focus {
+				box-shadow: none;
+			}
+		} //a
+	} //li
+
+	.active {
+		> a {
+			background-color: @color-main-green !important;
+			.transition-main(background-color, 0.3s) !important;
+		}
+	} //.tab-active
+
+} //.tabs--colored
+
+/*  Section Heading | Tab
+----------------------------------*/
+.@{p}section-heading {
+	margin-top: 2.48em;
+}
+
+///*  Horizontal tabs | Mobile
+//----------------------------------*/
+//@{p}tabs--mobile-hor {
+//	float: left;
+//	@media (min-width: @media-min-breaker) {
+//		float: none;
+//	}
+//}

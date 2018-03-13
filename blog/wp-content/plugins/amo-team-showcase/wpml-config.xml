@@ -1,0 +1,8 @@
+<wpml-config>
+    <custom-types>
+        <custom-type translate="1">amo-team</custom-type>
+    </custom-types>
+    <taxonomies>
+        <taxonomy translate="1">amo-team-category</taxonomy>
+    </taxonomies>
+</wpml-config>

@@ -1,0 +1,641 @@
+.fla_grabbable {
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+/* (Optional) Apply a "closed-hand" cursor during drag operation. */
+.fla_grabbable:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+.fla_AlbumsSwitcher_clearfix::after {
+    visibility: hidden;
+    display: block;
+    font-size: 0px;
+    content: " ";
+    clear: both;
+    height: 0px;
+}
+.fla_AlbumSwitcher_NoneTransition{
+    transition: none !important;
+}
+.fla_AlbumsSwitcher_Collection {
+    position: relative;
+    height: 50px;
+    transition: height .5s;
+    -webkit-user-select: none;
+}
+.fla_AlbumsSwitcher_Collection * {
+    box-sizing: border-box;
+}
+/******************************** GM AlbumsSwitcher Preloader *************************/
+.fla_AlbumsSwitcher_Preloader {
+    min-height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 100;
+}
+@keyframes spinner {
+    0% { transform: rotate(-360deg); }
+    100% { transform: rotate(0deg); }
+}
+@keyframes _spinner {
+    to {
+        transform: rotate(-1440deg);
+    }
+}
+.fla_AlbumsSwitcher_Preloader .c-spinner {
+    /*animation: 2s _spinner ease-in-out infinite alternate;*/
+    animation: 1s spinner linear infinite;
+}
+@keyframes fla_AlbumSwitcher_FadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/******************************** Albums Switcher Cover *************************/
+.fla_AlbumsSwitcher_Cover{
+    will-change: transform;
+    cursor: pointer;
+}
+.fla_AlbumsSwitcher_Cover_TD{
+    will-change: transform;
+}
+.fla_AlbumsSwitcher_Cover img{
+    transition: transform .5s;
+}
+.fla_AlbumsSwitcher_Cover .fla_AlbumsSwitcher_CoverHA, .fla_AlbumsSwitcher_Cover_TD .fla_AlbumsSwitcher_CoverHA {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: opacity .3s ease-in-out;
+    transition: opacity .5s;
+}
+.fla_AlbumsSwitcher_Cover .fla_AlbumsSwitcher_CoverTitleHolder, .fla_AlbumsSwitcher_Cover_TD .fla_AlbumsSwitcher_CoverTitleHolder
+{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.fla_AlbumsSwitcher_CoverTitleHolder .coverTitle {
+    font-size: 28px;
+    line-height: 28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    letter-spacing: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    color: #fff;
+    user-select: none;
+}
+.fla_AlbumsSwitcher_CoverTitleHolder .fla_AlbumSwitcher_CoverSpace
+{
+    transition: .3s;
+    height: 7px;
+}
+.fla_AlbumsSwitcher_CoverTitleHolder .coverCounter {
+    display: inline-block;
+    min-width: 52px;
+    height: 52px;
+    line-height: 52px;
+    padding: 0 10px;
+    border-radius: 500px;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+.fla_AlbumsSwitcher_Cover:hover img{
+    transform: scale(1.05);
+}
+.fla_AlbumsSwitcher_Cover:hover .fla_AlbumsSwitcher_CoverHA{
+    opacity: 1;
+}
+.fla_AlbumsSwitcher_Cover:hover .fla_AlbumSwitcher_CoverSpace
+{
+    height: 17px;
+}
+.fla_AlbumsSwitcher_CoverSelect img{
+    transform: scale(1.05);
+}
+.fla_AlbumsSwitcher_CoverSelect .fla_AlbumsSwitcher_CoverHA{
+    opacity: 1;
+}
+.fla_AlbumsSwitcher_CoverSelect .fla_AlbumSwitcher_CoverSpace
+{
+    height: 17px;
+}
+/******************************** Albums Switcher Collection View *************************/
+.fla_AlbumsSwitcher_TermView
+{
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    /*border-style: solid;
+    border-width: 0px 0px 2px 0px;*/
+}
+.fla_AlbumsSwitcher_TermView_irc
+{
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    overflow: hidden;
+}
+/******************************** Albums Switcher Collection Page View *************************/
+.fla_AlbumsSwitcher_TermPageView
+{
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    will-change: transform;
+    transition: 0s;
+    border-style: solid;
+    border-width: 2px 0px 0px 0px;
+}
+.fla_AlbumsSwitcher_TermPageViewTitle
+{
+    position: relative;
+    padding: 10px 20px;
+    width: 100%;
+    /*background-color: green;*/
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.fla_AlbumsSwitcher_TermPageViewDetail
+{
+    position: relative;
+    /*max-height: 80px;*/
+    padding: 10px 20px;
+    width: 100%;
+    /*background-color: #ffc236;*/
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 150%;
+    overflow: hidden;
+}
+.fla_AlbumsSwitcher_TermPageViewShare
+{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    max-height: 80px;
+    padding: 10px 20px 20px 20px;
+    width: 100%;
+    overflow: hidden;
+}
+.fla_AlbumsSwitcher_TermPageViewShare .thumbButton_CV_Header {
+    position: static;
+    float: left;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0px 5px;
+    /*background-color: white;*/
+    transition: .2s;
+}
+.fla_AlbumsSwitcher_TermPageViewShare .thumbButton_CV_Header:hover{
+    transform: scale(1.1);
+}
+.fla_AlbumsSwitcher_TermPageViewShare .thumbButton_CV_Header svg {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+/******************************** GM Albums Switcher ScrollBar *************************/
+.fla_AlbumsSwitcher_TermScrollBarWrap
+{
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    bottom: 0px;
+    overflow: hidden;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    box-sizing: content-box;
+}
+.fla_AlbumsSwitcher_ScrollView
+{
+    overflow: hidden;
+}
+.fla_AlbumsSwitcher_ScrollBar
+{
+    width: 100%;
+}
+.fla_AlbumsSwitcher_ScrollBarItem, .fla_AlbumsSwitcher_ScrollBarItem_TD
+{
+    position: relative;
+    height: 100%;
+    padding: 3px 3px 3px 0px;
+    float: left;
+}
+.fla_AlbumsSwitcher_ScrollBarItemHover
+{
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    right: 3px;
+    bottom: 3px;
+    opacity: 0;
+    transition: .2s;
+}
+.fla_AlbumsSwitcher_ScrollBarItem:hover .fla_AlbumsSwitcher_ScrollBarItemHover
+{
+    opacity: .9;
+}
+.fla_AlbumsSwitcher_ScrollBarItemHoverActiv
+{
+    opacity: .9;
+}
+.fla_AlbumsSwitcher_ScrollBarItemHover .fla_AlbumsSwitcher_TitleHolder
+{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 99;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.fla_AlbumsSwitcher_TitleHolder .fla_AlbumsSwitcher_ScrollBarItemTitle
+{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 0 5px;
+    text-shadow: rgba(0, 0, 0, 0.347059) 0px 0px 7px;
+}
+.fla_AlbumsSwitcher_ScrollBarItemHover .fla_AlbumsSwitcher_ScrollBarItemLink
+{
+    position: relative;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    border-radius: 50%;
+    margin: auto ;
+    /*box-shadow: rgba(0, 0, 0, 0.347059) 0px 0px 7px;
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    border-radius: 50%;
+    left: 50% ;
+    top: 50%;
+    /*transform: translateY(-50%) translateX(-50%);*/
+}
+.fla_AlbumsSwitcher_ScrollBarItemLink.rotate svg{
+    animation: 1s spinner linear infinite;
+}
+.fla_AlbumsSwitcher_ScrollBarItemLink svg
+{
+    width: 100%;
+    height: 100%;
+}
+/******************************** GM AlbumsSwitcher Collection View ****************/
+.fla_AlbumsSwitcher_PopCollectionView
+{
+    position: relative;
+    transition: 1s;
+}
+.fla_AlbumsSwitcher_PopCollectionView .collectionHeader
+{
+    position: relative;
+    margin-top: -20px;
+    overflow: hidden;
+    height: auto;
+}
+.fla_AlbumsSwitcher_PopCollectionView .collectionContent
+{
+    position: relative;
+    overflow: hidden;
+    height: 70px;
+}
+.fla_AlbumsSwitcher_PopCollectionView .collectionFooter
+{
+    position: relative;
+    overflow: hidden;
+    height: auto;
+}
+/******************************** GM AlbumsSwitcher Collection View Header *************************/
+.fla_AlbumsSwitcher_CollectionHeder {
+    position: static;
+    min-height: 30px;
+    text-align: center;
+    width: 100%;
+    transition: transform .5s;
+    padding: 15px 0 15px 0;
+    /*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05)*/
+}
+.fla_AlbumsSwitcher_CollectionHeder h2
+{
+    margin: 0 0 10px 0;
+    color: inherit;
+}
+.fla_AlbumsSwitcher_CollectionHeder .title_CV_Header {
+    margin: auto;
+    max-width: 640px;
+    text-decoration: none;
+    cursor: default;
+    pointer-events: none;
+}
+.fla_AlbumsSwitcher_CollectionHeder .description_CV_Header {
+    margin: 10px auto 0;
+    width: 90%;
+    max-width: 640px;
+}
+
+.fla_AlbumsSwitcher_CollectionHeder .thumbButton_CV_Header {
+    position: static;
+    float: left;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.fla_AlbumsSwitcher_CollectionHeder .thumbButton_CV_Header svg {
+    width: 100%;
+    height: 100%;
+    transition: fill 0.3s;
+    pointer-events: none;
+}
+/******************************** Special For Slider ***********************/
+/*.fla_AlbumsSwitcher_PopUpActive.fla_AlbumsSwitcher_PopUpActiveTransition, .fla_AlbumsSwitcher_PopUpActiveTransition{
+    height:100% !important;
+    overflow:hidden !important;
+}
+.fla_AlbumsSwitcher_PopUpActive {
+    height: auto !important;
+    overflow: auto !important;
+}
+.fla_AlbumsSwitcher_PopUpActive body {
+    position: static !important;
+}*/
+.fla_AlbumsSwitcher_Slider * {
+    box-sizing: border-box;
+}
+.fla_AlbumsSwitcher_Slider
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 999999;
+}
+.fla_AlbumsSwitcher_Slider .fla_AlbumSwitcherSliderBg
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s;
+}
+.fla_AlbumsSwitcher_Slider .fla_AlbumSwitcherSliderContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    will-change: transform;
+}
+.fla_AlbumsSwitcher_Slider .fla_AlbumSwitcherSliderContainer:focus {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline-style: none; /*IE*/
+}
+.fla_AlbumsSwitcher_Slider .fla_AlbumSwitcherSliderContainer:before {
+    display: inline-block;
+    height: 100%;
+}
+.fla_AlbumsSwitcher_Slider .fla_AlbumSwitcherSliderCounter {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    font-size: 13px;
+}
+.fla_AlbumsSwitcher_Slider .fla_AlbumSwitcherSliderSubmenu {
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    margin-left: 50%;
+    transition: transform .6s ease-in-out;
+    /*z-index: 100;*/
+}
+.fla_AlbumsSwitcher_Slider .fla_AlbumSwitcherSliderSubmenu .fla_sliderThumbButton {
+    float: left;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s;
+    box-sizing: border-box !important;
+}
+.fla_AlbumsSwitcher_Slider .fla_AlbumSwitcherSliderSubmenu .fla_sliderThumbButton svg {
+    width: 200%;
+    height: 200%;
+    pointer-events: none;
+}
+/* Slider ColectionView Controls*/
+.fla_AlbumSwitcherCloseButton, .fla_AlbumSwitcherPrevNextButton
+{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box !important;
+    width: 200%;
+    height: 200%;
+}
+
+.fla_AlbumSwitcherCloseButton {
+    opacity: 0.7;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 15px;
+    right: 0px;
+    padding-left: 20px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    z-index: 1246;
+    overflow: hidden;
+    cursor: pointer;
+    display: block;
+}
+/***************** SliderInfoBox ******************/
+.fla_AlbumsSwitcher_SliderInfoBox
+{
+    position: absolute;
+    padding: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.fla_AlbumsSwitcher_SliderInfoBox .sliderInfoSubMenu
+{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.fla_AlbumsSwitcher_SliderInfoBox .sliderInfoSubMenu .sliderInfoThumbButton
+{
+    float: left;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+    padding: 8px;
+    transition: background-color 0.3s;
+    box-sizing: border-box !important;
+}
+
+.fla_AlbumsSwitcher_SliderInfoBox .sliderInfoSubMenu .sliderInfoThumbButton svg {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+.fla_AlbumsSwitcher_SliderInfoBox .sliderInfoDescriptionWrap
+{
+    width: 100%;
+    max-width: 100%;
+}
+.fla_AlbumsSwitcher_SliderInfoBox .sliderInfoDescriptionWrap .title_SIB
+{
+    font-size: 150%;
+    margin: 10px 0;
+    text-align: center;
+}
+.fla_AlbumsSwitcher_SliderInfoBox .sliderInfoDescriptionWrap .description_SIB
+{
+    font-size: 100%;
+    margin: 10px 0;
+    text-align: center;
+}
+/******************************** Slider Thumbs Bar ***********************/
+.fla_AlbumsSwitcher_SliderThumbBar
+{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    box-shadow: 0px 1px 2px 3px rgba(0, 0, 0, 0.07);
+    -webkit-backface-visibility: hidden;
+}
+.fla_AlbumsSwitcher_SliderThumbBar:focus {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline-style: none; /*IE*/
+}
+.fla_AlbumsSwitcher_SliderThumb
+{
+    position: absolute;
+    overflow: hidden;
+    top:0px;
+    left:0px;
+    box-sizing: border-box;
+    border-top-width: 5px;
+    border-top-style: solid;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    transition: transform 0.6s;
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+}
+.fla_AlbumsSwitcher_SliderThumb img
+{
+    transition: transform 0.6s;
+}
+/***************** Audio Content ******************/
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.fla_AlbumSwitcherAudioCoverContainerAlbumsSwitcher {
+    position: absolute;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.fla_AlbumSwitcherAudioCoverContainerAlbumsSwitcher.rotate {
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.fla_AlbumSwitcher_CircleAudioControllerAlbumsSwitcherContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    width: 109px;
+    height: 109px;
+    transform: translate3d(-50%, -50%, 0px);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.fla_AlbumSwitcher_CirclebButtonAudioPlayerAlbumsSwitcher {
+    position: absolute;
+    display: block;
+    width: 106px;
+    height: 106px;
+    padding: 12px;
+    transition: background 0.3s;
+}
+
+.fla_AlbumSwitcher_CirclebButtonAudioPlayerAlbumsSwitcher svg {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}

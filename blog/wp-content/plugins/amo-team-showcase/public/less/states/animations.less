@@ -1,0 +1,121 @@
+/*  4.2 Animations
+-------------------------------------------------------------------*/
+
+/*  Fade-Slide In left  */
+@keyframes amoteam-fadeSlideIn-left {
+	from {
+		opacity: 0;
+		transform: translate3d(-80%, 0, 0);
+	}
+
+	20% {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.amoteam-fadeSlideIn-left {
+	animation-name: amoteam-fadeSlideIn-left;
+}
+
+/*  Fade-Slide Out Right  */
+@keyframes amoteam-fadeSlideOut-left {
+	from {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+
+	80% {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 0;
+		transform: translate3d(-80%, 0, 0);
+	}
+}
+
+.amoteam-fadeSlideOut-left {
+	animation-name: amoteam-fadeSlideOut-left;
+	animation-duration: 0.4s;
+}
+
+/*  Fade-Slide In Right  */
+@keyframes amoteam-fadeSlideIn-right {
+	from {
+		opacity: 0;
+		transform: translate3d(+80%, 0, 0);
+	}
+
+	20% {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.amoteam-fadeSlideIn-right {
+	animation-name: amoteam-fadeSlideIn-right;
+}
+
+/*  Fade-Slide Out Right  */
+@keyframes amoteam-fadeSlideOut-right {
+	from {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+
+	80% {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 0;
+		transform: translate3d(+80%, 0, 0);
+	}
+}
+
+.amoteam-fadeSlideOut-right {
+	animation-name: amoteam-fadeSlideOut-right;
+	animation-duration: 0.4s;
+}
+
+
+/*  Fade In  */
+@keyframes amoteam-fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.amoteam-fadeIn {
+	animation-name: amoteam-fadeIn;
+}
+
+/*  Fade Out  */
+@keyframes amoteam-fadeOut {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
+}
+
+.amoteam-fadeOut {
+	animation-name: amoteam-fadeOut;
+	animation-duration: 0.4s;
+}
+

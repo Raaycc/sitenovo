@@ -1,0 +1,22 @@
+/*  2.2 Layout
+-------------------------------------------------------------------*/
+[class^="amoteam"] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*  Columns and Rows
+----------------------------------*/
+.@{p}row {
+	&:extend(.amoteam-clearfix all);
+	[class*="col"] {
+		position: relative;
+		min-height: 1px;
+	}
+} //.row
+
+.@{p}col-2 {
+	float: left;
+	width: 50%;
+} //.col-2

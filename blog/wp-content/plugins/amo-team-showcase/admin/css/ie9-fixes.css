@@ -1,0 +1,18 @@
+
+/*==================================================================
+▐	IE9 FIXES
+===================================================================*/
+
+/*  Form fields/inputs border bottom
+----------------------------------*/
+.amoteam-setting .amoteam-setting__input{
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid #d5d8dc;
+}
+
+.amoteam-setting .amoteam-setting__input:focus{
+  border-color: #aecf66;
+}
+

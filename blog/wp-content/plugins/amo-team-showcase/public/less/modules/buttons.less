@@ -1,0 +1,36 @@
+/*  3.1 Buttons
+-------------------------------------------------------------------*/
+.@{p}btn {
+	border: none;
+	background: none;
+
+	box-shadow: none;
+	text-decoration: none;
+	cursor: pointer;
+	.transition();
+
+	&:focus, &:active, &:hover {
+		outline: none !important;
+		border: none !important;
+		box-shadow: none !important;
+	}
+
+	&:hover {
+	}
+
+} //.btn
+
+
+.@{p}btn-rc-square {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0;
+
+	border-radius: 0;
+}
+
+.@{p}btn-panel-close {
+	height: 40px;
+	width: 40px;
+}

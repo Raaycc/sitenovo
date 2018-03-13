@@ -1,0 +1,976 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AMO Team Showcase 1.0.0\n"
+"POT-Creation-Date: 2017-12-13 19:33+0300\n"
+"PO-Revision-Date: 2017-01-04 14:24+0300\n"
+"Last-Translator: \n"
+"Language-Team: AMO Themo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.13\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;esc_attr__;esc_att_e\n"
+"X-Poedit-SearchPath-0: admin\n"
+"X-Poedit-SearchPath-1: includes\n"
+"X-Poedit-SearchPath-2: public\n"
+"X-Poedit-SearchPath-3: .\n"
+"X-Poedit-SearchPathExcluded-0: languages\n"
+
+#: admin/amo-team-showcase-admin-enqueue.php:53
+msgid "Please set a featured image, to be able to publish / update the team member. It's recommended to upload / use the image, which size is at least 640x640 pixels."
+msgstr ""
+
+#: admin/amo-team-showcase-admin-enqueue.php:54
+#: admin/partials/member-meta-box.args.php:120
+msgid "Info Panel Image"
+msgstr ""
+
+#: admin/class-amo-team-showcase-admin.php:60
+msgid "AMO Team Showcase"
+msgstr ""
+
+#: admin/class-amo-team-showcase-admin.php:61
+msgid "AMO Themo (Oleg Goltsev)"
+msgstr ""
+
+#: admin/class-amo-team-showcase-admin.php:62
+msgid "Easily showcase members of your team/company and their info in sleek, responsive and professional way."
+msgstr ""
+
+#: admin/class-amo-team-showcase-admin.php:101
+#: includes/class-amo-team-showcase-activator.php:74
+msgid "Warning"
+msgstr ""
+
+#: admin/class-amo-team-showcase-admin.php:101
+#, php-format
+msgid "Amo Team Showcase plugin requires at least WordPress version %s and you are running version %s. Please <a href=\"%s\">update WordPress</a>."
+msgstr ""
+
+#: admin/class-amo-team-showcase-admin.php:115
+msgid "AMO Team Showcase plugin notice."
+msgstr ""
+
+#: admin/class-amo-team-showcase-admin.php:115
+msgctxt "at the end goes link to the plugin"
+msgid "With this plugin you should only use the images, which you have uploaded after plugin's activation. Because the plugin creates certain image size/format for its thumbnails. To make images uploaded to your Media Library prior plugin's activation have that format too, you can \"regenerate thumbnails\" using this plugin –"
+msgstr ""
+
+#: admin/class-amo-team-showcase-admin.php:252
+msgid "AMO Team Options"
+msgstr ""
+
+#: admin/class-amo-team-showcase-admin.php:253
+#: admin/class-amo-team-showcase-admin.php:678
+msgid "Options"
+msgstr ""
+
+#: admin/class-amo-team-showcase-admin.php:287
+msgctxt "Navigation tab title."
+msgid "General"
+msgstr ""
+
+#: admin/class-amo-team-showcase-admin.php:288
+msgctxt "Navigation tab title."
+msgid "Thumbnails"
+msgstr ""
+
+#: admin/class-amo-team-showcase-admin.php:289
+msgctxt "Navigation tab title."
+msgid "Panel"
+msgstr ""
+
+#: admin/class-amo-team-showcase-admin.php:290
+msgctxt "Navigation tab title."
+msgid "Shortcodes"
+msgstr ""
+
+#: admin/class-amo-team-showcase-admin.php:291
+msgctxt "Abridgement from Miscellaneous. Navigation tab title."
+msgid "Misc"
+msgstr ""
+
+#: admin/class-amo-team-showcase-admin.php:316
+msgid "You are not allowed to be on this page."
+msgstr ""
+
+#: admin/class-amo-team-showcase-admin.php:371
+msgid "Team Member Settings"
+msgstr ""
+
+#: admin/class-amo-team-showcase-admin.php:469
+msgid "Order"
+msgstr ""
+
+#: admin/class-amo-team-showcase-admin.php:471
+msgid "Member Shortcode"
+msgstr ""
+
+#: admin/class-amo-team-showcase-admin.php:589
+msgid "ID"
+msgstr ""
+
+#: admin/class-amo-team-showcase-admin.php:639
+msgid "Shortcode's documentation"
+msgstr ""
+
+#: admin/class-amo-team-showcase-admin.php:641
+msgctxt "Shortcodes generating block"
+msgid "Text Block"
+msgstr ""
+
+#: admin/class-amo-team-showcase-admin.php:647
+msgctxt "Shortcodes generating block"
+msgid "Skills"
+msgstr ""
+
+#: admin/class-amo-team-showcase-admin.php:653
+msgctxt "Shortcodes generating block"
+msgid "Team"
+msgstr ""
+
+#: admin/class-amo-team-showcase-admin.php:679
+msgid "Where to start?"
+msgstr ""
+
+#: admin/class-amo-team-showcase-admin.php:697
+msgid "AMO Team general"
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:16
+msgid "General Settings"
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:23
+msgid "Subtitle"
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:24
+msgid "Subtitle it is a text placed under the name/title of the member. E.g. – CEO, Graphic Designer, Film Director, etc."
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:28
+msgid "Enter a Subtitle"
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:32
+msgid "Social Icons"
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:33
+msgid "Enable/Disable social icons in member's info panel."
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:40
+msgctxt "# - it's a number sign"
+msgid "Social Icon #"
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:41
+msgid "Add social, skype or custom icons with links. If social icons are enabled, then they will be shown in team member's info panel. Max 12 icons."
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:43
+#: admin/partials/sub-views/form-parts/social-icons.view.php:78
+msgid "Add New Icon"
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:44
+msgid "The limit is reached, you can have only 12 social icons in team member info panel."
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:47
+msgid "Select social icon"
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:49
+msgid "Select an icon (by its name)."
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:77
+msgid "Social icon link"
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:78
+msgid "Proper link format is http://site.com/page, with http:// or https://, except for Skype."
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:78
+msgid "If link is not set, the social icon will not be outputted."
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:82
+msgid "Enter a Link"
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:85
+msgid "Custom Icon"
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:86
+msgid "You can set custom icon. Use square, PNG image with transparency."
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:104
+msgid "Post Format Settings"
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:105
+msgid "The settings presented here, depends on a chosen post format. E.g.: Standard, Image, Link, Quote."
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:121
+msgid "This image will be used in member's info panel."
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:121
+msgid " It's recommended to upload / use an image, which size is at least 640x640 pixels, or more."
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:121
+msgid "What about the \"Featured Image\", it is used in team member’s thumbnail, and also in info panel too, if info panel image is not set."
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:130
+msgid "Link URL"
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:131
+#, php-format
+msgid "Post Format — Link. %s Proper link format is http://website.com, with http:// or https://"
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:134
+msgid "Enter a URL"
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:140
+msgid "New Tab"
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:141
+msgid "Set to On to open the link in new browser tab."
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:149
+msgid "Quote"
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:150
+msgid "Enter a quote. You can change quote block's background color in plugin's options."
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:154
+msgid "Enter a Quote"
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:159
+msgid "Custom Code Block"
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:160
+msgid "For standard post type you can add your custom HTML code. The code block will be placed above member's title. Disallowed: script tag and inline JavaScript, these will be sanitized on page output (frontend)."
+msgstr ""
+
+#: admin/partials/member-meta-box.args.php:165
+msgid "Paste your code here"
+msgstr ""
+
+#: admin/partials/member-meta-box.view.php:13
+msgid "Warning — This team member metabox, and the plugin itself, will not work properly without Javascript!"
+msgstr ""
+
+#: admin/partials/member-meta-box.view.php:19
+msgctxt "Navigation tab name in team member metabox."
+msgid "General"
+msgstr ""
+
+#: admin/partials/member-meta-box.view.php:20
+msgctxt "Navigation tab name in team member metabox."
+msgid "Post Format"
+msgstr ""
+
+#: admin/partials/options-page.args.php:4
+msgid "Enter a font size"
+msgstr ""
+
+#: admin/partials/options-page.args.php:5
+msgctxt "the first part of option name in select input"
+msgid "Style"
+msgstr ""
+
+#: admin/partials/options-page.args.php:6
+msgid "A global setting that can be overridden in plugin shortcodes."
+msgstr ""
+
+#: admin/partials/options-page.args.php:25
+msgctxt "Options section title."
+msgid "General Settings"
+msgstr ""
+
+#: admin/partials/options-page.args.php:32
+msgid "Showcase Style"
+msgstr ""
+
+#: admin/partials/options-page.args.php:33
+msgid "Visual style of member thumbnails."
+msgstr ""
+
+#: admin/partials/options-page.args.php:33
+msgid "Note: for round image styles (Style 2) to look properly, you should upload/use images, which size is at least 640x640 pixels or which are square."
+msgstr ""
+
+#: admin/partials/options-page.args.php:46
+msgid "Main Accent Color"
+msgstr ""
+
+#: admin/partials/options-page.args.php:47
+#: admin/partials/options-page.args.php:56
+msgid "Sets color for certain areas/elements, both in member thumbnails and info panel."
+msgstr ""
+
+#: admin/partials/options-page.args.php:55
+msgid "Secondary Accent Color"
+msgstr ""
+
+#: admin/partials/options-page.args.php:64
+msgid "Main Font Color"
+msgstr ""
+
+#: admin/partials/options-page.args.php:65
+msgid "Font / Icon color for use on colored backgrounds, both in member thumbnails and info panel."
+msgstr ""
+
+#: admin/partials/options-page.args.php:80
+msgctxt "Options section title."
+msgid "Member Thumbnails"
+msgstr ""
+
+#: admin/partials/options-page.args.php:86
+msgid "Alignment"
+msgstr ""
+
+#: admin/partials/options-page.args.php:87
+msgid "Alignment of member thumbnails. The settings is relevant if \"full-width\" parameter in shortcode is set to \"no\", or if there are not enough team members to show them in full width of the container."
+msgstr ""
+
+#: admin/partials/options-page.args.php:91
+#: admin/partials/options-page.args.php:104
+#: includes/class-amo-team-showcase-widgets.php:166
+msgid "Left"
+msgstr ""
+
+#: admin/partials/options-page.args.php:92
+#: includes/class-amo-team-showcase-widgets.php:167
+msgid "Center"
+msgstr ""
+
+#: admin/partials/options-page.args.php:93
+#: admin/partials/options-page.args.php:105
+#: includes/class-amo-team-showcase-widgets.php:168
+msgid "Right"
+msgstr ""
+
+#: admin/partials/options-page.args.php:99
+msgid "Title/Subtitle Alignment"
+msgstr ""
+
+#: admin/partials/options-page.args.php:100
+msgid "Alignment of headings (title and subtitle) in member thumbnails."
+msgstr ""
+
+#: admin/partials/options-page.args.php:111
+#: admin/partials/options-page.args.php:211
+#: admin/partials/options-page.args.php:302
+msgid "Title Font Size"
+msgstr ""
+
+#: admin/partials/options-page.args.php:112
+msgid "Font size for thumbnail's title (px)."
+msgstr ""
+
+#: admin/partials/options-page.args.php:120
+#: admin/partials/options-page.args.php:220
+#: admin/partials/options-page.args.php:311
+msgid "Subtitle Font Size"
+msgstr ""
+
+#: admin/partials/options-page.args.php:121
+msgid "Font size for thumbnail's subtitle (px)."
+msgstr ""
+
+#: admin/partials/options-page.args.php:129
+msgid "Thumbnail Overlay"
+msgstr ""
+
+#: admin/partials/options-page.args.php:130
+msgid "Thumbnail overlay color on mouse hover. If it's not set, then will be used Secondary Accent Color."
+msgstr ""
+
+#: admin/partials/options-page.args.php:137
+msgid "Overlay Opacity"
+msgstr ""
+
+#: admin/partials/options-page.args.php:138
+msgid "Opacity of the overlay color."
+msgstr ""
+
+#: admin/partials/options-page.args.php:157
+msgid "Overlay Icon Size"
+msgstr ""
+
+#: admin/partials/options-page.args.php:158
+msgid "Size for overlay/hover icon in member thumbnail (px). Icon's colored background will be enlarged/decreased along with the icon size automatically."
+msgstr ""
+
+#: admin/partials/options-page.args.php:166
+msgid "Custom Info Icon"
+msgstr ""
+
+#: admin/partials/options-page.args.php:167
+msgid "You can set custom info (i) icon, which shows on hover. Use transparent PNG image."
+msgstr ""
+
+#: admin/partials/options-page.args.php:173
+msgid "Custom Link Icon"
+msgstr ""
+
+#: admin/partials/options-page.args.php:174
+msgid "You can set custom link icon, which shows on hover. Use transparent PNG image."
+msgstr ""
+
+#: admin/partials/options-page.args.php:180
+msgid "Custom Icon Size"
+msgstr ""
+
+#: admin/partials/options-page.args.php:181
+msgid "Visual size for custom overlay/hover icon in member thumbnail. Useful if you want to use, for example, 150x150 px image but show it as 75x75 px one. You can use any measurement units for example: 70px, 5em or 25%."
+msgstr ""
+
+#: admin/partials/options-page.args.php:185
+msgid "Enter icon size"
+msgstr ""
+
+#: admin/partials/options-page.args.php:189
+msgid "Hover Effect"
+msgstr ""
+
+#: admin/partials/options-page.args.php:190
+msgid "On / Off the effect on mouse hover over team member thumbnail."
+msgstr ""
+
+#: admin/partials/options-page.args.php:205
+msgctxt "Options section title."
+msgid "Member Info Panel"
+msgstr ""
+
+#: admin/partials/options-page.args.php:212
+msgid "Font size for panel's title (px)."
+msgstr ""
+
+#: admin/partials/options-page.args.php:221
+msgid "Font size for panel's subtitle (px)."
+msgstr ""
+
+#: admin/partials/options-page.args.php:229
+msgid "Background Color"
+msgstr ""
+
+#: admin/partials/options-page.args.php:230
+msgid "Panel's content background color."
+msgstr ""
+
+#: admin/partials/options-page.args.php:237
+msgid "Content Font Color"
+msgstr ""
+
+#: admin/partials/options-page.args.php:238
+msgid "Panel's content font color. If it is not set, then will be used Secondary Accent Color."
+msgstr ""
+
+#: admin/partials/options-page.args.php:245
+msgctxt "Options section title."
+msgid "Post Formats"
+msgstr ""
+
+#: admin/partials/options-page.args.php:250
+msgid "Quote BG Color"
+msgstr ""
+
+#: admin/partials/options-page.args.php:251
+msgid "Background color for quote area in panel. Quote post format."
+msgstr ""
+
+#: admin/partials/options-page.args.php:259
+msgctxt "Options section title."
+msgid "Additional Settings"
+msgstr ""
+
+#: admin/partials/options-page.args.php:264
+msgid "Alternative Scrolling"
+msgstr ""
+
+#: admin/partials/options-page.args.php:265
+msgid "If scrolling in member info panel doesn't work, you can try to enable this alternative scrolling. Best looks with centered panel."
+msgstr ""
+
+#: admin/partials/options-page.args.php:272
+msgid "Member Image Preloading"
+msgstr ""
+
+#: admin/partials/options-page.args.php:273
+msgid "Enable / Disable to load panel member image on page load (for image post type). By default panel member image loads when user hovers over member's thumbnail (or click it on mobile). Thus page loads faster, because plugin loads member image in panel only on demand, after the page is already loaded."
+msgstr ""
+
+#: admin/partials/options-page.args.php:288
+msgctxt "Options section title."
+msgid "Info Panel's Shortcodes Settings"
+msgstr ""
+
+#: admin/partials/options-page.args.php:294
+msgid "Headings Decoration"
+msgstr ""
+
+#: admin/partials/options-page.args.php:295
+msgid "Enable / Disable colored decorations (colored lines) in info panel for heading/title of shortcodes: Text Block, Skills."
+msgstr ""
+
+#: admin/partials/options-page.args.php:303
+msgid "Title font size (px) for the info panel shortcodes (Text Block, Skills)."
+msgstr ""
+
+#: admin/partials/options-page.args.php:312
+msgid "Subtitle font size (px) for the info panel shortcodes (Text Block, Skills)."
+msgstr ""
+
+#: admin/partials/options-page.args.php:320
+msgid "Bottom Margin"
+msgstr ""
+
+#: admin/partials/options-page.args.php:321
+msgid "Shortcode's (Text Block, Skills) bottom margin in info panel (px)."
+msgstr ""
+
+#: admin/partials/options-page.args.php:325
+msgid "Please enter a value"
+msgstr ""
+
+#: admin/partials/options-page.args.php:329
+msgctxt "Options section title."
+msgid "Skills Shortcode"
+msgstr ""
+
+#: admin/partials/options-page.args.php:334
+msgid "Underlying Line Opacity"
+msgstr ""
+
+#: admin/partials/options-page.args.php:335
+msgid "Underlying skill line (grey by default) uses Secondary Accent Color and this opacity setting to make the line color lighter/darker, which also depends on panel's background color."
+msgstr ""
+
+#: admin/partials/options-page.args.php:363
+msgctxt "Options section title."
+msgid "Plugin's Uninstall Settings"
+msgstr ""
+
+#: admin/partials/options-page.args.php:369
+msgid "Delete Options / Settings"
+msgstr ""
+
+#: admin/partials/options-page.args.php:370
+msgid "Delete plugin's options / settings, when uninstalling via Plugins > Delete."
+msgstr ""
+
+#: admin/partials/options-page.args.php:377
+msgid "Delete Custom Post Type"
+msgstr ""
+
+#: admin/partials/options-page.args.php:378
+msgid "Delete team members (custom post type) and their categories, when uninstalling via Plugins > Delete."
+msgstr ""
+
+#: admin/partials/options-page.args.php:385
+msgctxt "Options section title."
+msgid "Different Fixes:"
+msgstr ""
+
+#: admin/partials/options-page.args.php:390
+msgid "Clear jQuery events for thumbnails"
+msgstr ""
+
+#: admin/partials/options-page.args.php:391
+msgid "Clear all jQuery events for member thumbnails (for their <a> tags and <ul> container), on their init. May help to prevent problems with other scripts, which may automatically apply some jQuery events to these elements."
+msgstr ""
+
+#: admin/partials/options-page.view.php:16
+msgid "Warning — This options panel, and the plugin itself, will not work properly without Javascript!"
+msgstr ""
+
+#: admin/partials/options-page.view.php:18
+#, php-format
+msgctxt "plugin's name in options page"
+msgid "%sAMO%s Team Showcase"
+msgstr ""
+
+#: admin/partials/options-page.view.php:40
+msgctxt "The plugin version in the options page"
+msgid "Version"
+msgstr ""
+
+#: admin/partials/sub-views/form-parts/_defaults.args.php:77
+msgid "Add New One"
+msgstr ""
+
+#: admin/partials/sub-views/form-parts/_defaults.args.php:78
+msgid "Remove this group."
+msgstr ""
+
+#: admin/partials/sub-views/form-parts/_defaults.args.php:79
+msgid "The limit is reached, you can have only %LIMIT% groups."
+msgstr ""
+
+#: admin/partials/sub-views/form-parts/group.view.php:49
+msgctxt "button label"
+msgid "Remove this group"
+msgstr ""
+
+#: admin/partials/sub-views/form-parts/group.view.php:52
+#: admin/partials/sub-views/form-parts/social-icons.view.php:39
+msgctxt "button label"
+msgid "Collapse panel"
+msgstr ""
+
+#: admin/partials/sub-views/form-parts/social-icons.view.php:38
+msgctxt "button label"
+msgid "Remove this social icon"
+msgstr ""
+
+#: admin/partials/sub-views/form-parts/switcher.view.php:27
+msgctxt "input/button label"
+msgid "ON"
+msgstr ""
+
+#: admin/partials/sub-views/form-parts/switcher.view.php:29
+msgctxt "input/button label"
+msgid "OFF"
+msgstr ""
+
+#: admin/partials/sub-views/form-parts/upload.view.php:31
+msgctxt "button label"
+msgid "Unset/Remove the image"
+msgstr ""
+
+#: admin/partials/sub-views/form-parts/upload.view.php:35
+msgctxt "button label"
+msgid "Set Image"
+msgstr ""
+
+#: admin/partials/sub-views/options-page/panel__buttons.view.php:14
+msgid "Documentation"
+msgstr ""
+
+#: admin/partials/sub-views/options-page/panel__buttons.view.php:15
+msgid "Reset All Settings"
+msgstr ""
+
+#: admin/partials/sub-views/options-page/panel__buttons.view.php:16
+msgid "Save Changes"
+msgstr ""
+
+#: admin/partials/sub-views/options-page/settings-reset.view.php:12
+msgctxt "Settings update notice"
+msgid "The settings were reset to default values."
+msgstr ""
+
+#: admin/partials/sub-views/options-page/settings-updated.view.php:12
+msgctxt "Settings update notice"
+msgid "Settings saved"
+msgstr ""
+
+#: admin/partials/sub-views/post/sc-button-modal.view.php:20
+msgctxt "button label"
+msgid "Close modal window"
+msgstr ""
+
+#: admin/partials/sub-views/post/sc-button-modal.view.php:21
+msgid "AMO Team Shortcodes"
+msgstr ""
+
+#: admin/partials/sub-views/post/shortcodes-button.view.php:13
+msgctxt "button label"
+msgid "AMO Team"
+msgstr ""
+
+#: includes/class-amo-team-showcase-activator.php:67
+msgid "The plugin cannot be activated, due to the following:"
+msgstr ""
+
+#: includes/class-amo-team-showcase-activator.php:68
+msgctxt "a URL link"
+msgid "Back to plugins"
+msgstr ""
+
+#: includes/class-amo-team-showcase-activator.php:74
+#, php-format
+msgid "Amo Team Showcase plugin requires at least PHP version 5.3. You are running version %s. Please contact your web hosting to upgrade/change PHP version."
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:92
+msgctxt "widget name"
+msgid "AMO Team Members"
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:176
+msgid "Team"
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:177
+msgid "Member"
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:179
+#, php-format
+msgid "All the widget fields correspond to the same parameters in plugin's shortcodes – %s and %s."
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:183
+msgid "This setting works only if \"Team member ID\" field is empty."
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:189
+msgctxt "widget field backend"
+msgid "Title"
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:196
+msgctxt "widget field backend"
+msgid "Team member ID"
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:197
+msgid "You can find member's ID right in the shortcode column, on All Team Members page. To enter several ID's please use comma – 19,27,85."
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:204
+msgctxt "widget field backend"
+msgid "Max number of members to display"
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:224
+msgctxt "widget field backend"
+msgid "Categories"
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:225
+#, php-format
+msgid "Display team members only from certain categories. %s"
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:226
+#: includes/class-amo-team-showcase.php:522
+msgid "All Categories"
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:233
+msgctxt "widget field backend"
+msgid "Item width"
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:234
+msgid "Width of membmer thumbnails (px)."
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:241
+msgctxt "widget field backend"
+msgid "Item margin"
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:242
+msgid "Width and height of margins/spaces between member thumbnails on the page (px)."
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:249
+msgctxt "widget field backend"
+msgid "Full width"
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:250
+msgid "When set to yes, will try to span member thumbnails row to container's width."
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:251
+msgid "Yes"
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:251
+msgid "No"
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:258
+msgctxt "widget field backend"
+msgid "Panel alignment"
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:259
+msgid "Defines from which side will appear the member info panel. You can also turn the panel off."
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:260
+msgid "Off"
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:267
+msgctxt "widget field backend"
+msgid "Items alignment"
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:268
+msgid "Defines alignment of member thumbnails."
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:276
+msgctxt "widget field backend"
+msgid "Style"
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:277
+msgid "Defines style of member thumbnails."
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:285
+msgctxt "widget field backend"
+msgid "Order by"
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:286
+msgid "Defines order of team members, works jointly with \"Order\" field of member."
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:288
+#: includes/class-amo-team-showcase-widgets.php:289
+msgid "Publication date"
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:290
+#: includes/class-amo-team-showcase-widgets.php:291
+msgid "Modification date"
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:292
+#: includes/class-amo-team-showcase-widgets.php:293
+msgid "Title / Name"
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:294
+msgid "Random"
+msgstr ""
+
+#: includes/class-amo-team-showcase-widgets.php:302
+msgctxt "widget field backend"
+msgid "CSS class"
+msgstr ""
+
+#: includes/class-amo-team-showcase.php:468
+msgctxt "post type, general name"
+msgid "Team Members"
+msgstr ""
+
+#: includes/class-amo-team-showcase.php:469
+msgctxt "post type, singular name"
+msgid "Team Member"
+msgstr ""
+
+#: includes/class-amo-team-showcase.php:470
+msgctxt "button/menu item label"
+msgid "Add New Member"
+msgstr ""
+
+#: includes/class-amo-team-showcase.php:471
+msgctxt "add new member screen"
+msgid "Add New Member"
+msgstr ""
+
+#: includes/class-amo-team-showcase.php:472
+msgid "Edit Member"
+msgstr ""
+
+#: includes/class-amo-team-showcase.php:473
+msgid "New Member"
+msgstr ""
+
+#: includes/class-amo-team-showcase.php:474
+msgid "All Members"
+msgstr ""
+
+#: includes/class-amo-team-showcase.php:475
+msgid "View Member"
+msgstr ""
+
+#: includes/class-amo-team-showcase.php:476
+msgid "Search Members"
+msgstr ""
+
+#: includes/class-amo-team-showcase.php:477
+msgid "No Member Found"
+msgstr ""
+
+#: includes/class-amo-team-showcase.php:478
+msgid "No Member Found In Trash"
+msgstr ""
+
+#: includes/class-amo-team-showcase.php:480
+msgctxt "WP menu item name"
+msgid "AMO Team"
+msgstr ""
+
+#: includes/class-amo-team-showcase.php:519
+msgctxt "taxonomy general name"
+msgid "Team Categories"
+msgstr ""
+
+#: includes/class-amo-team-showcase.php:520
+msgctxt "taxonomy singular name"
+msgid "Category"
+msgstr ""
+
+#: includes/class-amo-team-showcase.php:521
+msgid "Search Categories"
+msgstr ""
+
+#: includes/class-amo-team-showcase.php:523
+msgid "Parent Category"
+msgstr ""
+
+#: includes/class-amo-team-showcase.php:524
+msgid "Parent Category:"
+msgstr ""
+
+#: includes/class-amo-team-showcase.php:525
+msgid "Edit Category"
+msgstr ""
+
+#: includes/class-amo-team-showcase.php:526
+msgid "Update Category"
+msgstr ""
+
+#: includes/class-amo-team-showcase.php:527
+msgid "Add New Category"
+msgstr ""
+
+#: includes/class-amo-team-showcase.php:528
+msgid "New Category Name"
+msgstr ""
+
+#: includes/class-amo-team-showcase.php:529
+msgid "Categories"
+msgstr ""
+
+#: public/partials/panel.view.php:50
+msgctxt "button label"
+msgid "Close Panel"
+msgstr ""

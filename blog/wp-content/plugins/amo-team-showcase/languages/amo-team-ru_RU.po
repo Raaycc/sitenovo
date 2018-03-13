@@ -1,0 +1,1419 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: AMO Team Showcase 1.0.0\n"
+"POT-Creation-Date: 2017-12-13 19:34+0300\n"
+"PO-Revision-Date: 2017-12-13 19:34+0300\n"
+"Last-Translator: \n"
+"Language-Team: AMO Themo\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.13\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_x;_ex;_n;esc_attr__;esc_att_e\n"
+"X-Poedit-SearchPath-0: admin\n"
+"X-Poedit-SearchPath-1: includes\n"
+"X-Poedit-SearchPath-2: public\n"
+"X-Poedit-SearchPath-3: .\n"
+"X-Poedit-SearchPathExcluded-0: languages\n"
+
+#: admin/amo-team-showcase-admin-enqueue.php:53
+msgid ""
+"Please set a featured image, to be able to publish / update the team member. "
+"It's recommended to upload / use the image, which size is at least 640x640 "
+"pixels."
+msgstr ""
+"Чтобы опубликовать или обновить участника команды, пожалуйста задайте "
+"«Изображение записи». Рекомендуется использовать/загружать изображения, чей "
+"размер не меньше 640x640 пикселей."
+
+#: admin/amo-team-showcase-admin-enqueue.php:54
+#: admin/partials/member-meta-box.args.php:120
+msgid "Info Panel Image"
+msgstr "Изображение инфо панели"
+
+#: admin/class-amo-team-showcase-admin.php:60
+msgid "AMO Team Showcase"
+msgstr "AMO Команда"
+
+#: admin/class-amo-team-showcase-admin.php:61
+msgid "AMO Themo (Oleg Goltsev)"
+msgstr "AMO Themo (Олег Гольцев)"
+
+#: admin/class-amo-team-showcase-admin.php:62
+msgid ""
+"Easily showcase members of your team/company and their info in sleek, "
+"responsive and professional way."
+msgstr ""
+"Легко, профессионально и стильно представьте участников вашей команды / "
+"компании, и информацию о них."
+
+#: admin/class-amo-team-showcase-admin.php:101
+#: includes/class-amo-team-showcase-activator.php:74
+msgid "Warning"
+msgstr "Предупреждение"
+
+#: admin/class-amo-team-showcase-admin.php:101
+#, php-format
+msgid ""
+"Amo Team Showcase plugin requires at least WordPress version %s and you are "
+"running version %s. Please <a href=\"%s\">update WordPress</a>."
+msgstr ""
+"Плагину AMO Команда требуется версия WordPress не ниже  %s, вы используете "
+"версию %s. Пожалуйста <a href=\"%s\">обновите WordPress</a>."
+
+#: admin/class-amo-team-showcase-admin.php:115
+msgid "AMO Team Showcase plugin notice."
+msgstr "Плагин AMO Команда. Уведомление."
+
+#: admin/class-amo-team-showcase-admin.php:115
+msgctxt "at the end goes link to the plugin"
+msgid ""
+"With this plugin you should only use the images, which you have uploaded "
+"after plugin's activation. Because the plugin creates certain image size/"
+"format for its thumbnails. To make images uploaded to your Media Library "
+"prior plugin's activation have that format too, you can \"regenerate "
+"thumbnails\" using this plugin –"
+msgstr ""
+"С этим плагином вам следует использовать только те изображения, которые были "
+"загружены после активации плагина. Плагин создает определенный размер/формат "
+"изображений для своих миниатюр. Чтобы добавить этот формат для изображений, "
+"загруженных в библиотеку медиафайлов до активации плагина, вы можете "
+"\"пересоздать миниатюры\" используя вот этот плагин –"
+
+#: admin/class-amo-team-showcase-admin.php:252
+msgid "AMO Team Options"
+msgstr "AMO Команда - Настройки"
+
+#: admin/class-amo-team-showcase-admin.php:253
+#: admin/class-amo-team-showcase-admin.php:678
+msgid "Options"
+msgstr "Настройки"
+
+#: admin/class-amo-team-showcase-admin.php:287
+msgctxt "Navigation tab title."
+msgid "General"
+msgstr "Основное"
+
+#: admin/class-amo-team-showcase-admin.php:288
+msgctxt "Navigation tab title."
+msgid "Thumbnails"
+msgstr "Миниатюры"
+
+#: admin/class-amo-team-showcase-admin.php:289
+msgctxt "Navigation tab title."
+msgid "Panel"
+msgstr "Панель"
+
+#: admin/class-amo-team-showcase-admin.php:290
+msgctxt "Navigation tab title."
+msgid "Shortcodes"
+msgstr "Шорткоды"
+
+#: admin/class-amo-team-showcase-admin.php:291
+msgctxt "Abridgement from Miscellaneous. Navigation tab title."
+msgid "Misc"
+msgstr "Разное"
+
+#: admin/class-amo-team-showcase-admin.php:316
+msgid "You are not allowed to be on this page."
+msgstr "Вам запрещено находится на этой странице."
+
+#: admin/class-amo-team-showcase-admin.php:371
+msgid "Team Member Settings"
+msgstr "Установки Участника Команды"
+
+#: admin/class-amo-team-showcase-admin.php:469
+msgid "Order"
+msgstr "Порядок"
+
+#: admin/class-amo-team-showcase-admin.php:471
+msgid "Member Shortcode"
+msgstr "Шорткод участника"
+
+#: admin/class-amo-team-showcase-admin.php:589
+msgid "ID"
+msgstr "ID"
+
+#: admin/class-amo-team-showcase-admin.php:639
+msgid "Shortcode's documentation"
+msgstr "Документация для шорткода"
+
+#: admin/class-amo-team-showcase-admin.php:641
+msgctxt "Shortcodes generating block"
+msgid "Text Block"
+msgstr "Текстовый Блок"
+
+#: admin/class-amo-team-showcase-admin.php:647
+msgctxt "Shortcodes generating block"
+msgid "Skills"
+msgstr "Навыки"
+
+#: admin/class-amo-team-showcase-admin.php:653
+msgctxt "Shortcodes generating block"
+msgid "Team"
+msgstr "Команда"
+
+#: admin/class-amo-team-showcase-admin.php:679
+msgid "Where to start?"
+msgstr "С чего начать?"
+
+#: admin/class-amo-team-showcase-admin.php:697
+msgid "AMO Team general"
+msgstr "AMO Команда - основной"
+
+#: admin/partials/member-meta-box.args.php:16
+msgid "General Settings"
+msgstr "Основные  настройки"
+
+#: admin/partials/member-meta-box.args.php:23
+msgid "Subtitle"
+msgstr "Подзаголовок"
+
+#: admin/partials/member-meta-box.args.php:24
+msgid ""
+"Subtitle it is a text placed under the name/title of the member. E.g. – CEO, "
+"Graphic Designer, Film Director, etc."
+msgstr ""
+"Подзаголовок это текст, который находится под именем/заголовком участника. "
+"Например: руководитель, графический дизайнер, режиссер."
+
+#: admin/partials/member-meta-box.args.php:28
+msgid "Enter a Subtitle"
+msgstr "Введите подзаголовок"
+
+#: admin/partials/member-meta-box.args.php:32
+msgid "Social Icons"
+msgstr "Социальные иконки"
+
+#: admin/partials/member-meta-box.args.php:33
+msgid "Enable/Disable social icons in member's info panel."
+msgstr "Включить / Выключить социальные иконки в инфо панели участника."
+
+#: admin/partials/member-meta-box.args.php:40
+msgctxt "# - it's a number sign"
+msgid "Social Icon #"
+msgstr "Социальная иконка №"
+
+#: admin/partials/member-meta-box.args.php:41
+msgid ""
+"Add social, skype or custom icons with links. If social icons are enabled, "
+"then they will be shown in team member's info panel. Max 12 icons."
+msgstr ""
+"Добавляйте иконки социальных сетей, скайпа или собственные, со ссылками. "
+"Если социальные иконки включены, то они будут показаны в инфо панели "
+"участника. Максимум 12 иконок."
+
+#: admin/partials/member-meta-box.args.php:43
+#: admin/partials/sub-views/form-parts/social-icons.view.php:78
+msgid "Add New Icon"
+msgstr "Добавить иконку"
+
+#: admin/partials/member-meta-box.args.php:44
+msgid ""
+"The limit is reached, you can have only 12 social icons in team member info "
+"panel."
+msgstr ""
+"Ограничение достигнуто. Вы можете иметь не больше 12 социальных иконок в "
+"инфо панели участника."
+
+#: admin/partials/member-meta-box.args.php:47
+msgid "Select social icon"
+msgstr "Выбрать социальную иконку"
+
+#: admin/partials/member-meta-box.args.php:49
+msgid "Select an icon (by its name)."
+msgstr "Выберете иконку (по ее имени)."
+
+#: admin/partials/member-meta-box.args.php:77
+msgid "Social icon link"
+msgstr "Ссылка соц. иконки"
+
+#: admin/partials/member-meta-box.args.php:78
+msgid ""
+"Proper link format is http://site.com/page, with http:// or https://, except "
+"for Skype."
+msgstr ""
+"Правильный формат ссылки – http://site.ru, вместе с http:// или https://. За "
+"исключением ссылки Skype."
+
+#: admin/partials/member-meta-box.args.php:78
+msgid "If link is not set, the social icon will not be outputted."
+msgstr "Если ссылка не задана, социальная иконка не будет показана."
+
+#: admin/partials/member-meta-box.args.php:82
+msgid "Enter a Link"
+msgstr "Введите ссылку"
+
+#: admin/partials/member-meta-box.args.php:85
+msgid "Custom Icon"
+msgstr "Собственная иконка"
+
+#: admin/partials/member-meta-box.args.php:86
+msgid "You can set custom icon. Use square, PNG image with transparency."
+msgstr ""
+"Вы можете поставить собственную иконку. Используйте квадратное изображение, "
+"в формате PNG с прозрачностью."
+
+#: admin/partials/member-meta-box.args.php:104
+msgid "Post Format Settings"
+msgstr "Настройки формата записи"
+
+#: admin/partials/member-meta-box.args.php:105
+msgid ""
+"The settings presented here, depends on a chosen post format. E.g.: "
+"Standard, Image, Link, Quote."
+msgstr ""
+"Установки представленные в этой вкладке, зависят от выбранного формата "
+"записи. Например: Стандартный, Изображение, Цитата и т.д."
+
+#: admin/partials/member-meta-box.args.php:121
+msgid "This image will be used in member's info panel."
+msgstr "Это изображение будет использовано в инфо панели участника. "
+
+#: admin/partials/member-meta-box.args.php:121
+msgid ""
+" It's recommended to upload / use an image, which size is at least 640x640 "
+"pixels, or more."
+msgstr ""
+"Рекомендуется загружать/использовать изображение, чей размер не меньше "
+"640x640 пикселей."
+
+#: admin/partials/member-meta-box.args.php:121
+msgid ""
+"What about the \"Featured Image\", it is used in team member’s thumbnail, "
+"and also in info panel too, if info panel image is not set."
+msgstr ""
+"Что касается «Изображения записи», оно используется в миниатюре участника "
+"(на странице), а также в инфо панели, если «Изображение инфо панели» не "
+"установлено."
+
+#: admin/partials/member-meta-box.args.php:130
+msgid "Link URL"
+msgstr "Ссылка (URL)"
+
+#: admin/partials/member-meta-box.args.php:131
+#, php-format
+msgid ""
+"Post Format — Link. %s Proper link format is http://website.com, with "
+"http:// or https://"
+msgstr ""
+"Формат записи – Ссылка. %s Правильный формат ссылки – http://site.ru, вместе "
+"с http:// или https://."
+
+#: admin/partials/member-meta-box.args.php:134
+msgid "Enter a URL"
+msgstr "Введите ссылку"
+
+#: admin/partials/member-meta-box.args.php:140
+msgid "New Tab"
+msgstr "Новая вкладка"
+
+#: admin/partials/member-meta-box.args.php:141
+msgid "Set to On to open the link in new browser tab."
+msgstr ""
+"Чтобы ссылка открывалась в новой вкладке браузера, поставьте переключатель "
+"на ВКЛ."
+
+#: admin/partials/member-meta-box.args.php:149
+msgid "Quote"
+msgstr "Цитата"
+
+#: admin/partials/member-meta-box.args.php:150
+msgid ""
+"Enter a quote. You can change quote block's background color in plugin's "
+"options."
+msgstr ""
+"Введите цитату. Вы можете изменить цвет фона блока цитаты, в настройках "
+"плагина."
+
+#: admin/partials/member-meta-box.args.php:154
+msgid "Enter a Quote"
+msgstr "Введите цитату"
+
+#: admin/partials/member-meta-box.args.php:159
+msgid "Custom Code Block"
+msgstr "Пользовательский блок кода"
+
+#: admin/partials/member-meta-box.args.php:160
+msgid ""
+"For standard post type you can add your custom HTML code. The code block "
+"will be placed above member's title. Disallowed: script tag and inline "
+"JavaScript, these will be sanitized on page output (frontend)."
+msgstr ""
+"Для стандартного типа записи вы можете добавить, свой, пользовательский HTML "
+"код. Этот блок кода будет помещен в инфо панель, над именем/заголовком "
+"участника. Запрещено: тег script и строчный JavaScript, они будут вычищены "
+"из кода при выводе блока на страницу (фронтенд)."
+
+#: admin/partials/member-meta-box.args.php:165
+msgid "Paste your code here"
+msgstr "Вставьте свой код сюда"
+
+#: admin/partials/member-meta-box.view.php:13
+msgid ""
+"Warning — This team member metabox, and the plugin itself, will not work "
+"properly without Javascript!"
+msgstr ""
+"Предупреждение — Эта мета-панель установок участника команды, не будет "
+"работать правильно без JavaScript!"
+
+#: admin/partials/member-meta-box.view.php:19
+msgctxt "Navigation tab name in team member metabox."
+msgid "General"
+msgstr "Основное"
+
+#: admin/partials/member-meta-box.view.php:20
+msgctxt "Navigation tab name in team member metabox."
+msgid "Post Format"
+msgstr "Формат"
+
+#: admin/partials/options-page.args.php:4
+msgid "Enter a font size"
+msgstr "Введите размер шрифта"
+
+#: admin/partials/options-page.args.php:5
+msgctxt "the first part of option name in select input"
+msgid "Style"
+msgstr "Стиль"
+
+#: admin/partials/options-page.args.php:6
+msgid "A global setting that can be overridden in plugin shortcodes."
+msgstr ""
+"Это глобальная настройка, которая может быть изменена в шорткодах плагина."
+
+#: admin/partials/options-page.args.php:25
+msgctxt "Options section title."
+msgid "General Settings"
+msgstr "Основные Настройки"
+
+#: admin/partials/options-page.args.php:32
+msgid "Showcase Style"
+msgstr "Стиль миниатюр"
+
+#: admin/partials/options-page.args.php:33
+msgid "Visual style of member thumbnails."
+msgstr "Визуальный стиль, миниатюр участников на странице. "
+
+#: admin/partials/options-page.args.php:33
+msgid ""
+"Note: for round image styles (Style 2) to look properly, you should upload/"
+"use images, which size is at least 640x640 pixels or which are square."
+msgstr ""
+"Примечание: чтобы круглый стиль миниатюр (Стиль 2) выглядел правильно, вы "
+"должны загружать/использовать изображения, чей размер не меньше 640x640 "
+"пикселей или изображения должны быть квадратными."
+
+#: admin/partials/options-page.args.php:46
+msgid "Main Accent Color"
+msgstr "Главный цвет оформления"
+
+#: admin/partials/options-page.args.php:47
+#: admin/partials/options-page.args.php:56
+msgid ""
+"Sets color for certain areas/elements, both in member thumbnails and info "
+"panel."
+msgstr ""
+"Устанавливает цвет оформления для определенных мест/элементов, и в инфо "
+"панели, и в миниатюрах участников."
+
+#: admin/partials/options-page.args.php:55
+msgid "Secondary Accent Color"
+msgstr "Второй цвет оформления"
+
+#: admin/partials/options-page.args.php:64
+msgid "Main Font Color"
+msgstr "Главный цвет шрифта"
+
+#: admin/partials/options-page.args.php:65
+msgid ""
+"Font / Icon color for use on colored backgrounds, both in member thumbnails "
+"and info panel."
+msgstr ""
+"Цвет шрифта/иконок для использования на цветных фонах, и в инфо панели, и в "
+"миниатюрах участников."
+
+#: admin/partials/options-page.args.php:80
+msgctxt "Options section title."
+msgid "Member Thumbnails"
+msgstr "Миниатюры участников"
+
+#: admin/partials/options-page.args.php:86
+msgid "Alignment"
+msgstr "Выравнивание"
+
+#: admin/partials/options-page.args.php:87
+msgid ""
+"Alignment of member thumbnails. The settings is relevant if \"full-width\" "
+"parameter in shortcode is set to \"no\", or if there are not enough team "
+"members to show them in full width of the container."
+msgstr ""
+"Выравнивание миниатюр участников.  Настройка актуальна если в \"full-width\" "
+"параметре шорткода указано \"no\" (нет/выкл) или если в команде недостаточно "
+"участников чтобы показать их в полную ширину контейнера."
+
+#: admin/partials/options-page.args.php:91
+#: admin/partials/options-page.args.php:104
+#: includes/class-amo-team-showcase-widgets.php:166
+msgid "Left"
+msgstr "Лево"
+
+#: admin/partials/options-page.args.php:92
+#: includes/class-amo-team-showcase-widgets.php:167
+msgid "Center"
+msgstr "Центр"
+
+#: admin/partials/options-page.args.php:93
+#: admin/partials/options-page.args.php:105
+#: includes/class-amo-team-showcase-widgets.php:168
+msgid "Right"
+msgstr "Право"
+
+#: admin/partials/options-page.args.php:99
+msgid "Title/Subtitle Alignment"
+msgstr "Выравнивание заголовков"
+
+#: admin/partials/options-page.args.php:100
+msgid "Alignment of headings (title and subtitle) in member thumbnails."
+msgstr ""
+"Выравнивание/расположение заголовка и подзаголовка у миниатюры участника."
+
+#: admin/partials/options-page.args.php:111
+#: admin/partials/options-page.args.php:211
+#: admin/partials/options-page.args.php:302
+msgid "Title Font Size"
+msgstr "Размер шрифта заголовка"
+
+#: admin/partials/options-page.args.php:112
+msgid "Font size for thumbnail's title (px)."
+msgstr "Размер шрифта для заголовка миниатюры (пиксели)."
+
+#: admin/partials/options-page.args.php:120
+#: admin/partials/options-page.args.php:220
+#: admin/partials/options-page.args.php:311
+msgid "Subtitle Font Size"
+msgstr "Размер шрифта подзаголовка"
+
+#: admin/partials/options-page.args.php:121
+msgid "Font size for thumbnail's subtitle (px)."
+msgstr "Размер шрифта для подзаголовка миниатюры (пиксели)."
+
+#: admin/partials/options-page.args.php:129
+msgid "Thumbnail Overlay"
+msgstr "Цвет перекрытия"
+
+#: admin/partials/options-page.args.php:130
+msgid ""
+"Thumbnail overlay color on mouse hover. If it's not set, then will be used "
+"Secondary Accent Color."
+msgstr ""
+"Цвет перекрытия миниатюры при наведении на нее мышки. Если цвет не задан, то "
+"будет использован «Второй цвет оформления»."
+
+#: admin/partials/options-page.args.php:137
+msgid "Overlay Opacity"
+msgstr "Непрозрачность перекрытия"
+
+#: admin/partials/options-page.args.php:138
+msgid "Opacity of the overlay color."
+msgstr "Непрозрачность цвета перекрытия."
+
+#: admin/partials/options-page.args.php:157
+msgid "Overlay Icon Size"
+msgstr "Размер иконки перекрытия"
+
+#: admin/partials/options-page.args.php:158
+msgid ""
+"Size for overlay/hover icon in member thumbnail (px). Icon's colored "
+"background will be enlarged/decreased along with the icon size automatically."
+msgstr ""
+"Размер иконки перекрытия/наведения мышки, у миниатюры (пиксели). Цветной фон "
+"иконки будет автоматически увеличен или уменьшен в соответствии с размером "
+"иконки."
+
+#: admin/partials/options-page.args.php:166
+msgid "Custom Info Icon"
+msgstr "Собственная инфо иконка"
+
+#: admin/partials/options-page.args.php:167
+msgid ""
+"You can set custom info (i) icon, which shows on hover. Use transparent PNG "
+"image."
+msgstr ""
+"Вы можете поставить собственную инфо иконку (i), которая появляется при "
+"наведении мыши. Используйте прозрачное PNG изображение."
+
+#: admin/partials/options-page.args.php:173
+msgid "Custom Link Icon"
+msgstr "Собственная иконка ссылки"
+
+#: admin/partials/options-page.args.php:174
+msgid ""
+"You can set custom link icon, which shows on hover. Use transparent PNG "
+"image."
+msgstr ""
+"Вы можете установить собственную иконку ссылки, которая появляется при "
+"наведении мыши. Используйте прозрачное PNG изображение."
+
+#: admin/partials/options-page.args.php:180
+msgid "Custom Icon Size"
+msgstr "Размер собственной иконки"
+
+#: admin/partials/options-page.args.php:181
+msgid ""
+"Visual size for custom overlay/hover icon in member thumbnail. Useful if you "
+"want to use, for example, 150x150 px image but show it as 75x75 px one. You "
+"can use any measurement units for example: 70px, 5em or 25%."
+msgstr ""
+"Визуальный размер собственной иконки, появляющейся при наведении мыши, в "
+"миниатюре участника. Удобно, если вы хотите использовать, например, "
+"изображение 150x150 пикселей, но показать иконку как 75x75 пикселей. Вы "
+"можете использовать любые единицы измерение, например: 70px, 5em или 25%."
+
+#: admin/partials/options-page.args.php:185
+msgid "Enter icon size"
+msgstr "Введите размер иконки"
+
+#: admin/partials/options-page.args.php:189
+msgid "Hover Effect"
+msgstr "Эффект наведения курсора"
+
+#: admin/partials/options-page.args.php:190
+msgid "On / Off the effect on mouse hover over team member thumbnail."
+msgstr ""
+"ВКЛ / ВЫКЛ эффект, который появляется при наведения курсора мыши на "
+"миниатюру участника команды."
+
+#: admin/partials/options-page.args.php:205
+msgctxt "Options section title."
+msgid "Member Info Panel"
+msgstr "Инфо панель участника"
+
+#: admin/partials/options-page.args.php:212
+msgid "Font size for panel's title (px)."
+msgstr "Размер шрифта для заголовка панели (пиксели)."
+
+#: admin/partials/options-page.args.php:221
+msgid "Font size for panel's subtitle (px)."
+msgstr "Размер шрифта для подзаголовка панели (пиксели)."
+
+#: admin/partials/options-page.args.php:229
+msgid "Background Color"
+msgstr "Цвет фона"
+
+#: admin/partials/options-page.args.php:230
+msgid "Panel's content background color."
+msgstr "Цвет фона контента/содержимого панели."
+
+#: admin/partials/options-page.args.php:237
+msgid "Content Font Color"
+msgstr "Цвет шрифта контента"
+
+#: admin/partials/options-page.args.php:238
+msgid ""
+"Panel's content font color. If it is not set, then will be used Secondary "
+"Accent Color."
+msgstr ""
+"Цвет шрифта контента/содержимого панели. Если цвет не задан, то будет "
+"использован «Второй цвет оформления»."
+
+#: admin/partials/options-page.args.php:245
+msgctxt "Options section title."
+msgid "Post Formats"
+msgstr "Форматы Записи"
+
+#: admin/partials/options-page.args.php:250
+msgid "Quote BG Color"
+msgstr "Цвет фона цитаты"
+
+#: admin/partials/options-page.args.php:251
+msgid "Background color for quote area in panel. Quote post format."
+msgstr "Цвет фона, для блока цитаты в инфо панели. Формат записи – Цитата."
+
+#: admin/partials/options-page.args.php:259
+msgctxt "Options section title."
+msgid "Additional Settings"
+msgstr "Дополнительные настройки"
+
+#: admin/partials/options-page.args.php:264
+msgid "Alternative Scrolling"
+msgstr "Альтернативный скроллинг"
+
+#: admin/partials/options-page.args.php:265
+msgid ""
+"If scrolling in member info panel doesn't work, you can try to enable this "
+"alternative scrolling. Best looks with centered panel."
+msgstr ""
+"Если скроллинг в инфо панели участника не работает, вы можете попробовать "
+"включить альтернативный скроллинг. Лучше всего смотрится с панелью "
+"расположенной по центру."
+
+#: admin/partials/options-page.args.php:272
+msgid "Member Image Preloading"
+msgstr "Предзагрузка картинки участника"
+
+#: admin/partials/options-page.args.php:273
+msgid ""
+"Enable / Disable to load panel member image on page load (for image post "
+"type). By default panel member image loads when user hovers over member's "
+"thumbnail (or click it on mobile). Thus page loads faster, because plugin "
+"loads member image in panel only on demand, after the page is already loaded."
+msgstr ""
+"ВКЛ / ВЫКЛ загрузку изображения участника в инфо панели, вместе с загрузкой "
+"страницы (для формата записи - Изображение). По умолчанию, изображение "
+"участника в инфо панели загружается, когда пользователь наводит мышку (или "
+"кликает на мобильных устройствах) на миниатюру участника. Таким образом, "
+"страница загружается быстрее, так как плагин загружает изображение участника "
+"в инфо панели, только «по требованию»  и уже после того как страница "
+"загружена."
+
+#: admin/partials/options-page.args.php:288
+msgctxt "Options section title."
+msgid "Info Panel's Shortcodes Settings"
+msgstr "Настройки шорткодов инфо панели"
+
+#: admin/partials/options-page.args.php:294
+msgid "Headings Decoration"
+msgstr "Украшение заголовков"
+
+#: admin/partials/options-page.args.php:295
+msgid ""
+"Enable / Disable colored decorations (colored lines) in info panel for "
+"heading/title of shortcodes: Text Block, Skills."
+msgstr ""
+"Включить / Выключить цветные украшения (цветные линии) для заголовков "
+"шорткодов в инфо панели: Текстовый Блок, Навыки."
+
+#: admin/partials/options-page.args.php:303
+msgid ""
+"Title font size (px) for the info panel shortcodes (Text Block, Skills)."
+msgstr ""
+"Размер шрифта для заголовка шорткода инфо панели (Текстовый Блок, Навыки) "
+"(пиксели)."
+
+#: admin/partials/options-page.args.php:312
+msgid ""
+"Subtitle font size (px) for the info panel shortcodes (Text Block, Skills)."
+msgstr ""
+"Размер шрифта для подзаголовка шорткода инфо панели (Текстовый Блок, Навыки) "
+"(пиксели)."
+
+#: admin/partials/options-page.args.php:320
+msgid "Bottom Margin"
+msgstr "Нижний отступ"
+
+#: admin/partials/options-page.args.php:321
+msgid "Shortcode's (Text Block, Skills) bottom margin in info panel (px)."
+msgstr ""
+"Нижний отступ (margin) для шорткодов (Текстовый блок, Умения) в инфо панели "
+"(пиксели)."
+
+#: admin/partials/options-page.args.php:325
+msgid "Please enter a value"
+msgstr "Введите значение"
+
+#: admin/partials/options-page.args.php:329
+msgctxt "Options section title."
+msgid "Skills Shortcode"
+msgstr "Шорткод – навыки"
+
+#: admin/partials/options-page.args.php:334
+msgid "Underlying Line Opacity"
+msgstr "Непрозрачность нижней линии"
+
+#: admin/partials/options-page.args.php:335
+msgid ""
+"Underlying skill line (grey by default) uses Secondary Accent Color and this "
+"opacity setting to make the line color lighter/darker, which also depends on "
+"panel's background color."
+msgstr ""
+"Нижняя линия навыка (серая по умолчанию) использует «Второй цвет оформления» "
+"и эту настройку непрозрачности чтобы сделать цвет этой линии темнее/светлее, "
+"что также зависит от цвета фона панели."
+
+#: admin/partials/options-page.args.php:363
+msgctxt "Options section title."
+msgid "Plugin's Uninstall Settings"
+msgstr "Настройки деинсталляции плагина"
+
+#: admin/partials/options-page.args.php:369
+msgid "Delete Options / Settings"
+msgstr "Удалить настройки / установки"
+
+#: admin/partials/options-page.args.php:370
+msgid ""
+"Delete plugin's options / settings, when uninstalling via Plugins > Delete."
+msgstr ""
+"Удалить настройки / установки плагина, при деинсталляции плагина через "
+"Плагины > Удалить."
+
+#: admin/partials/options-page.args.php:377
+msgid "Delete Custom Post Type"
+msgstr "Удалить тип записи"
+
+#: admin/partials/options-page.args.php:378
+msgid ""
+"Delete team members (custom post type) and their categories, when "
+"uninstalling via Plugins > Delete."
+msgstr ""
+"Удалить участников команды (тип записи) и их категории, при деинсталляции "
+"плагина через Плагины > Удалить."
+
+#: admin/partials/options-page.args.php:385
+msgctxt "Options section title."
+msgid "Different Fixes:"
+msgstr "Различные исправления"
+
+#: admin/partials/options-page.args.php:390
+msgid "Clear jQuery events for thumbnails"
+msgstr "Очистить  jQuery события для миниатюр"
+
+#: admin/partials/options-page.args.php:391
+msgid ""
+"Clear all jQuery events for member thumbnails (for their <a> tags and <ul> "
+"container), on their init. May help to prevent problems with other scripts, "
+"which may automatically apply some jQuery events to these elements."
+msgstr ""
+"Очистить все jQuery события для миниатюр участников (их <a> элементов и <ul> "
+"контейнера), при их инициализации. Может помочь предотвратить проблемы с "
+"другими скриптами, которые могут автоматически применять свои jQuery события "
+"к этим элементам."
+
+#: admin/partials/options-page.view.php:16
+msgid ""
+"Warning — This options panel, and the plugin itself, will not work properly "
+"without Javascript!"
+msgstr ""
+"Предупреждение — Эта панель настроек, и сам плагин, не будут работать "
+"правильно без JavaScript!"
+
+#: admin/partials/options-page.view.php:18
+#, php-format
+msgctxt "plugin's name in options page"
+msgid "%sAMO%s Team Showcase"
+msgstr "%sAMO%s Команда"
+
+#: admin/partials/options-page.view.php:40
+msgctxt "The plugin version in the options page"
+msgid "Version"
+msgstr "Версия"
+
+#: admin/partials/sub-views/form-parts/_defaults.args.php:77
+msgid "Add New One"
+msgstr "Добавить еще один"
+
+#: admin/partials/sub-views/form-parts/_defaults.args.php:78
+msgid "Remove this group."
+msgstr "Удалить эту группу"
+
+#: admin/partials/sub-views/form-parts/_defaults.args.php:79
+msgid "The limit is reached, you can have only %LIMIT% groups."
+msgstr "Лимит достигнут, вы можете иметь только %LIMIT% групп."
+
+#: admin/partials/sub-views/form-parts/group.view.php:49
+msgctxt "button label"
+msgid "Remove this group"
+msgstr "Удалить эту группу"
+
+#: admin/partials/sub-views/form-parts/group.view.php:52
+#: admin/partials/sub-views/form-parts/social-icons.view.php:39
+msgctxt "button label"
+msgid "Collapse panel"
+msgstr "Свернуть панель"
+
+#: admin/partials/sub-views/form-parts/social-icons.view.php:38
+msgctxt "button label"
+msgid "Remove this social icon"
+msgstr "Удалить эту социальную иконку"
+
+#: admin/partials/sub-views/form-parts/switcher.view.php:27
+msgctxt "input/button label"
+msgid "ON"
+msgstr "ВКЛ"
+
+#: admin/partials/sub-views/form-parts/switcher.view.php:29
+msgctxt "input/button label"
+msgid "OFF"
+msgstr "ВЫКЛ"
+
+#: admin/partials/sub-views/form-parts/upload.view.php:31
+msgctxt "button label"
+msgid "Unset/Remove the image"
+msgstr "Удалить изображение"
+
+#: admin/partials/sub-views/form-parts/upload.view.php:35
+msgctxt "button label"
+msgid "Set Image"
+msgstr "Задать изображение"
+
+#: admin/partials/sub-views/options-page/panel__buttons.view.php:14
+msgid "Documentation"
+msgstr "Документация"
+
+#: admin/partials/sub-views/options-page/panel__buttons.view.php:15
+msgid "Reset All Settings"
+msgstr "Сброс настроек"
+
+#: admin/partials/sub-views/options-page/panel__buttons.view.php:16
+msgid "Save Changes"
+msgstr "Сохранить"
+
+#: admin/partials/sub-views/options-page/settings-reset.view.php:12
+msgctxt "Settings update notice"
+msgid "The settings were reset to default values."
+msgstr "Настройки были сброшены до значений по умолчанию."
+
+#: admin/partials/sub-views/options-page/settings-updated.view.php:12
+msgctxt "Settings update notice"
+msgid "Settings saved"
+msgstr "Настройки сохранены"
+
+#: admin/partials/sub-views/post/sc-button-modal.view.php:20
+msgctxt "button label"
+msgid "Close modal window"
+msgstr "Закрыть всплывающее окошко"
+
+#: admin/partials/sub-views/post/sc-button-modal.view.php:21
+msgid "AMO Team Shortcodes"
+msgstr "Шорткоды AMO Команды"
+
+#: admin/partials/sub-views/post/shortcodes-button.view.php:13
+msgctxt "button label"
+msgid "AMO Team"
+msgstr "AMO Команда"
+
+#: includes/class-amo-team-showcase-activator.php:67
+msgid "The plugin cannot be activated, due to the following:"
+msgstr "Плагин не может быть активирован в связи с нижеследующим:"
+
+#: includes/class-amo-team-showcase-activator.php:68
+msgctxt "a URL link"
+msgid "Back to plugins"
+msgstr "Назад к списку плагинов"
+
+#: includes/class-amo-team-showcase-activator.php:74
+#, php-format
+msgid ""
+"Amo Team Showcase plugin requires at least PHP version 5.3. You are running "
+"version %s. Please contact your web hosting to upgrade/change PHP version."
+msgstr ""
+"Плагину AMO Команда для работы требуется версия PHP не ниже 5.3. Вы "
+"используете версию PHP %s. Пожалуйста свяжитесь с службой поддержки вашего "
+"хостинга чтобы обновить/изменить версию PHP."
+
+#: includes/class-amo-team-showcase-widgets.php:92
+msgctxt "widget name"
+msgid "AMO Team Members"
+msgstr "AMO Участники Команды"
+
+#: includes/class-amo-team-showcase-widgets.php:176
+msgid "Team"
+msgstr "Команда"
+
+#: includes/class-amo-team-showcase-widgets.php:177
+msgid "Member"
+msgstr "Участник"
+
+#: includes/class-amo-team-showcase-widgets.php:179
+#, php-format
+msgid ""
+"All the widget fields correspond to the same parameters in plugin's "
+"shortcodes – %s and %s."
+msgstr ""
+"Все поля/параметры виджета, соответствуют тем же самым параметрам в "
+"шорткодах плагина – %s и %s."
+
+#: includes/class-amo-team-showcase-widgets.php:183
+msgid "This setting works only if \"Team member ID\" field is empty."
+msgstr ""
+"Эта настройка работает только если поле \"ID участника команды\" пусто."
+
+#: includes/class-amo-team-showcase-widgets.php:189
+msgctxt "widget field backend"
+msgid "Title"
+msgstr "Заголовок"
+
+#: includes/class-amo-team-showcase-widgets.php:196
+msgctxt "widget field backend"
+msgid "Team member ID"
+msgstr "ID участника команды"
+
+#: includes/class-amo-team-showcase-widgets.php:197
+msgid ""
+"You can find member's ID right in the shortcode column, on All Team Members "
+"page. To enter several ID's please use comma – 19,27,85."
+msgstr ""
+"Вы можете найти ID участника в колонке шорткода, на странице Все Участники "
+"Команды. Чтобы ввести несколько ID, используйте запятую – 19,27,85"
+
+#: includes/class-amo-team-showcase-widgets.php:204
+msgctxt "widget field backend"
+msgid "Max number of members to display"
+msgstr "Максимальное количество участников"
+
+#: includes/class-amo-team-showcase-widgets.php:224
+msgctxt "widget field backend"
+msgid "Categories"
+msgstr "Категории"
+
+#: includes/class-amo-team-showcase-widgets.php:225
+#, php-format
+msgid "Display team members only from certain categories. %s"
+msgstr "Показать участников только из определенных категорий. %s"
+
+#: includes/class-amo-team-showcase-widgets.php:226
+#: includes/class-amo-team-showcase.php:522
+msgid "All Categories"
+msgstr "Все категории"
+
+#: includes/class-amo-team-showcase-widgets.php:233
+msgctxt "widget field backend"
+msgid "Item width"
+msgstr "Ширина элемента"
+
+#: includes/class-amo-team-showcase-widgets.php:234
+msgid "Width of membmer thumbnails (px)."
+msgstr "Ширина миниатюры участника (пиксели)."
+
+#: includes/class-amo-team-showcase-widgets.php:241
+msgctxt "widget field backend"
+msgid "Item margin"
+msgstr "Поля элемента"
+
+#: includes/class-amo-team-showcase-widgets.php:242
+msgid ""
+"Width and height of margins/spaces between member thumbnails on the page "
+"(px)."
+msgstr ""
+"Ширина и высота промежутков между миниатюрами участников на странице "
+"(пиксели)."
+
+#: includes/class-amo-team-showcase-widgets.php:249
+msgctxt "widget field backend"
+msgid "Full width"
+msgstr "Полная ширина"
+
+#: includes/class-amo-team-showcase-widgets.php:250
+msgid ""
+"When set to yes, will try to span member thumbnails row to container's width."
+msgstr ""
+"Если установлено в \"Да\", плагин будет стараться растянуть миниатюры "
+"участников в их ряду, на всю ширину контейнера."
+
+#: includes/class-amo-team-showcase-widgets.php:251
+msgid "Yes"
+msgstr "Да"
+
+#: includes/class-amo-team-showcase-widgets.php:251
+msgid "No"
+msgstr "Нет"
+
+#: includes/class-amo-team-showcase-widgets.php:258
+msgctxt "widget field backend"
+msgid "Panel alignment"
+msgstr "Расположение панели"
+
+#: includes/class-amo-team-showcase-widgets.php:259
+msgid ""
+"Defines from which side will appear the member info panel. You can also turn "
+"the panel off."
+msgstr ""
+"Определяет с какой стороны, появится инфо панель участника. Вы также можете "
+"выключить инфо панель."
+
+#: includes/class-amo-team-showcase-widgets.php:260
+msgid "Off"
+msgstr "Выкл"
+
+#: includes/class-amo-team-showcase-widgets.php:267
+msgctxt "widget field backend"
+msgid "Items alignment"
+msgstr "Выравнивание элементов"
+
+#: includes/class-amo-team-showcase-widgets.php:268
+msgid "Defines alignment of member thumbnails."
+msgstr "Определяет выравнивание миниатюр участников."
+
+#: includes/class-amo-team-showcase-widgets.php:276
+msgctxt "widget field backend"
+msgid "Style"
+msgstr "Стиль"
+
+#: includes/class-amo-team-showcase-widgets.php:277
+msgid "Defines style of member thumbnails."
+msgstr "Определяет стиль миниатюр участников на странице."
+
+#: includes/class-amo-team-showcase-widgets.php:285
+msgctxt "widget field backend"
+msgid "Order by"
+msgstr "Упорядочить по"
+
+#: includes/class-amo-team-showcase-widgets.php:286
+msgid ""
+"Defines order of team members, works jointly with \"Order\" field of member."
+msgstr ""
+"Определяет порядок вывода участников, но работает вместе с параметром "
+"участника - \"Порядок\"."
+
+#: includes/class-amo-team-showcase-widgets.php:288
+#: includes/class-amo-team-showcase-widgets.php:289
+msgid "Publication date"
+msgstr "Дата публикации"
+
+#: includes/class-amo-team-showcase-widgets.php:290
+#: includes/class-amo-team-showcase-widgets.php:291
+msgid "Modification date"
+msgstr "Дата изменения"
+
+#: includes/class-amo-team-showcase-widgets.php:292
+#: includes/class-amo-team-showcase-widgets.php:293
+msgid "Title / Name"
+msgstr "Заголовок / Имя"
+
+#: includes/class-amo-team-showcase-widgets.php:294
+msgid "Random"
+msgstr "Случайно"
+
+#: includes/class-amo-team-showcase-widgets.php:302
+msgctxt "widget field backend"
+msgid "CSS class"
+msgstr "CSS класс"
+
+#: includes/class-amo-team-showcase.php:468
+msgctxt "post type, general name"
+msgid "Team Members"
+msgstr "Участники команды"
+
+#: includes/class-amo-team-showcase.php:469
+msgctxt "post type, singular name"
+msgid "Team Member"
+msgstr "Участника Команды"
+
+#: includes/class-amo-team-showcase.php:470
+msgctxt "button/menu item label"
+msgid "Add New Member"
+msgstr "Добавить нового"
+
+#: includes/class-amo-team-showcase.php:471
+msgctxt "add new member screen"
+msgid "Add New Member"
+msgstr "Добавление нового участника"
+
+#: includes/class-amo-team-showcase.php:472
+msgid "Edit Member"
+msgstr "Редактирование участника"
+
+#: includes/class-amo-team-showcase.php:473
+msgid "New Member"
+msgstr "Новый участник"
+
+#: includes/class-amo-team-showcase.php:474
+msgid "All Members"
+msgstr "Все участники"
+
+#: includes/class-amo-team-showcase.php:475
+msgid "View Member"
+msgstr "Смотреть участника"
+
+#: includes/class-amo-team-showcase.php:476
+msgid "Search Members"
+msgstr "Искать Участников"
+
+#: includes/class-amo-team-showcase.php:477
+msgid "No Member Found"
+msgstr "По вашему запросу участников команды не найдено"
+
+#: includes/class-amo-team-showcase.php:478
+msgid "No Member Found In Trash"
+msgstr "В корзине участников команды не найдено "
+
+#: includes/class-amo-team-showcase.php:480
+msgctxt "WP menu item name"
+msgid "AMO Team"
+msgstr "AMO Команда"
+
+#: includes/class-amo-team-showcase.php:519
+msgctxt "taxonomy general name"
+msgid "Team Categories"
+msgstr "Категории Команд"
+
+#: includes/class-amo-team-showcase.php:520
+msgctxt "taxonomy singular name"
+msgid "Category"
+msgstr "Категория"
+
+#: includes/class-amo-team-showcase.php:521
+msgid "Search Categories"
+msgstr "Искать категории"
+
+#: includes/class-amo-team-showcase.php:523
+msgid "Parent Category"
+msgstr "Родительская категория"
+
+#: includes/class-amo-team-showcase.php:524
+msgid "Parent Category:"
+msgstr "Родительская категория"
+
+#: includes/class-amo-team-showcase.php:525
+msgid "Edit Category"
+msgstr "Редактирование категории"
+
+#: includes/class-amo-team-showcase.php:526
+msgid "Update Category"
+msgstr "Обновить категорию"
+
+#: includes/class-amo-team-showcase.php:527
+msgid "Add New Category"
+msgstr "Добавить категорию"
+
+#: includes/class-amo-team-showcase.php:528
+msgid "New Category Name"
+msgstr "Новое имя категории"
+
+#: includes/class-amo-team-showcase.php:529
+msgid "Categories"
+msgstr "Категории"
+
+#: public/partials/panel.view.php:50
+msgctxt "button label"
+msgid "Close Panel"
+msgstr "Закрыть панель"
+
+#~ msgid ""
+#~ "Clear all jQuery events for member thumbnails (for their \"a\" tags and "
+#~ "\"ul\" container), on their init. May help to prevent problems with other "
+#~ "scripts, which may automatically apply some jQuery events to these "
+#~ "elements."
+#~ msgstr ""
+#~ "Очистить все jQuery события для миниатюр участников (их <a> элементов и "
+#~ "<ul> контейнера), при их инициализации. Может помочь предотвратить "
+#~ "проблемы с другими скриптами, которые могут автоматически применять свои "
+#~ "jQuery события к этим элементам."
+
+#~ msgid ""
+#~ "Clear all jQuery events for member thumbnails (for their \"a\" tags and "
+#~ "\"ul\" container), on their init. May help to prevent problems with other "
+#~ "scripts, which may automatically apply some jQuery events to certain "
+#~ "elements."
+#~ msgstr ""
+#~ "Очистите все события jQuery для членов эскизов (для их «» метки и «ul» "
+#~ "контейнера), на их init. Могут помочь предотвратить проблемы с другими "
+#~ "скриптами, которые могут автоматически применять некоторые jQuery события "
+#~ "для определенных элементов."
+
+#~ msgid "Format"
+#~ msgstr "Формат"
+
+#~ msgid "Enter image size"
+#~ msgstr "Указать размер иконки"
+
+#~ msgid ""
+#~ "Add social or skype icons with links. If social icons are enabled, then "
+#~ "they will be shown in team member's info panel. Max 12 icons."
+#~ msgstr ""
+#~ "Добавляйте иконки социальных сетей или скайпа со ссылками. Если "
+#~ "социальные иконки включены, то они будут показаны в инфо панели "
+#~ "участника. Максимум 12 иконок."
+
+#~ msgctxt "taxonomy general name"
+#~ msgid "Categories"
+#~ msgstr "Категории"
+
+#~ msgid ""
+#~ "Alignment of member thumbnails. The settings is relevant if \"full-width"
+#~ "\" parameter in shortcode is set to \"no\", or if there are not enough "
+#~ "team members to show them full width."
+#~ msgstr ""
+#~ "Выравнивание миниатюр участников.  Настройка актуальна если в \"full-width"
+#~ "\" параметре шорткода указано \"no\" (нет/выкл) или "
+
+#~ msgid ""
+#~ "Alignment of member thumbnails. The settings is relevant if \"full-width"
+#~ "\" parameter in shortcode is set to \"no\"."
+#~ msgstr ""
+#~ "Выравнивание миниатюр участников.  Настройка актуальна если в \"full-width"
+#~ "\" параметре шорткода указано \"no\" (нет/выкл)."
+
+#~ msgid "Alignment of member thumbnails."
+#~ msgstr "Выравнивание миниатюр участников."
+
+#~ msgid ""
+#~ "Amo Team Showcase plugin requires at least WordPress version 4.6. You are "
+#~ "running version %s. Please <a href=\"%s\">update WordPress</a>."
+#~ msgstr ""
+#~ "Плагину AMO Команда требуется версия WordPress не ниже 4.6. Вы "
+#~ "используете версию %s. Пожалуйста <a href=\"%s\">обновите WordPress</a>."
+
+#~ msgid ""
+#~ "Easily showcase members of your team/company in sleek and professional "
+#~ "way."
+#~ msgstr ""
+#~ "Легко, профессионально и стильно представьте участников вашей команды или "
+#~ "компании."
+
+#~ msgid ""
+#~ "Amo Team Showcase plugin requires at least WordPress version 4.2 to "
+#~ "function properly. You are running version %s. Please upgrade and try "
+#~ "again."
+#~ msgstr ""
+#~ "Плагину AMO Команда для нормальной работы требуется версия WordPress не "
+#~ "ниже 4.2. Вы используете версию %s. Пожалуйста обновите WordPress и "
+#~ "попробуйте еще раз."
+
+#~ msgid ""
+#~ "For standard post type you can add your custom HTML code. The code block "
+#~ "will be placed above member's title. Disallowed: script tag and inline "
+#~ "JavaScript, these will be sanitized on frontend output."
+#~ msgstr ""
+#~ "Для стандартного типа записи вы можете добавить, свой, пользовательский "
+#~ "HTML код. Этот блок кода будет помещен в инфо панель, над именем/"
+#~ "заголовком участника. Запрещено: тег script и строчный JavaScript, они "
+#~ "будут вычищены из кода при выводе блока на страницу (фронтенд)."
+
+#~ msgid ""
+#~ "For standard post type you can add your custom HTML code. The code block "
+#~ "will be placed above member's title. Disallowed: script tag and inline "
+#~ "JavaScript, these will be sanitized."
+#~ msgstr ""
+#~ "Для стандартного типа записи вы можете добавить, свой, пользовательский "
+#~ "HTML код. Этот блок кода будет помещен в инфо панель, над именем/"
+#~ "заголовком участника. Запрещено: тег script и строчный JavaScript, они "
+#~ "будут вычищены из кода"
+
+#~ msgid ""
+#~ "Allows to easily showcase members of your team/company in sleek and "
+#~ "professional way."
+#~ msgstr ""
+#~ "Позволяет легко, профессионально и стильно представить участников вашей "
+#~ "команды/компании."
+
+#~ msgid "Oleg Goltsev"
+#~ msgstr "Олег Гольцев"
+
+#~ msgid "AMO Team Showcase Notice."
+#~ msgstr "Плагин AMO Команда. Уведомление."
+
+#~ msgid "Add New Member"
+#~ msgstr "Добавить нового"
+
+#~ msgid ""
+#~ "Delete team members and their categories, when uninstalling via Plugins > "
+#~ "Delete."
+#~ msgstr "Удалить участников команды (тип записи) и их категории"
+
+#~ msgid ""
+#~ "Underlying skill line (grey by default) uses Secondary Accent Color and "
+#~ "this opacity setting to make the line color lighter/darker, that also "
+#~ "depends on panel's background color."
+#~ msgstr ""
+#~ "Нижняя линия навыка (серая по умолчанию) использует «Второй цвет "
+#~ "оформления» и эту настройку непрозрачности чтобы сделать цвет этой линии "
+#~ "темнее/светлее, что также зависит от цвета фона панели."
+
+#~ msgid "text"
+#~ msgstr "Тестовый текст!!!"
+
+#~ msgid ""
+#~ "Underlying skill line (grey by default) uses Secondary Accent Color and "
+#~ "this opacity setting to make the line color lighter/darker, depending on "
+#~ "the panel background color."
+#~ msgstr ""
+#~ "Нижняя линия навыка (серая по умолчанию) использует «Второй цвет "
+#~ "оформления» и эту настройку непрозрачности чтобы сделать цвет этой линии "
+#~ "темнее/светлее, что также в зависит от цвета фона панели."
+
+#~ msgid "amoteam_skill"
+#~ msgstr "hdhsjsdjkaj"
+
+#~ msgctxt "shortcode name"
+#~ msgid "amoteam_skill"
+#~ msgstr "fdfdfdfdg"
+
+#~ msgid ""
+#~ "Panel's content font color. If is not set, then will be used Secondary "
+#~ "Accent Color."
+#~ msgstr ""
+#~ "Цвет шрифта контента/содержимого панели. Если цвет не задан, то будет "
+#~ "использован «Второй цвет оформления»."
+
+#~ msgid "Background color for quote area. Quote post format."
+#~ msgstr "Цвет фона для блока цитаты в инфо панели. Формат записи – Цитата."
+
+#~ msgid ""
+#~ "Font size for overlay/hover icon in member thumbnail (px). Icon's colored "
+#~ "background will be enlarged/decreased along with the icon automatically."
+#~ msgstr ""
+#~ "Размер шрифта для иконки перекрытия/наведения мышки, у миниатюры. Цветной "
+#~ "фон иконки будет автоматически увеличен или уменьшен вместе с размером "
+#~ "иконки."
+
+#~ msgid ""
+#~ "Visual style of member thumbnails. A global setting that can be "
+#~ "overridden in plugin shortcodes."
+#~ msgstr ""
+#~ "Визуальный стиль, миниатюр участников на странице. Это глобальная "
+#~ "настройка, которая может быть отменена в шорткодах плагина."
+
+#~ msgid ""
+#~ "Sets color for many areas/elements, both in member thumbnails and info "
+#~ "panel."
+#~ msgstr ""
+#~ "Устанавливает цвет оформления для многих мест/элементов, и в инфо панели, "
+#~ "и в миниатюрах участников."
+
+#~ msgid ""
+#~ "Sets main color for many areas/elements, both in member thumbnails and "
+#~ "info panel."
+#~ msgstr ""
+#~ "Устанавливает цвет оформления для многих мест/элементов, и в инфо панели, "
+#~ "и в миниатюрах участников."
+
+#~ msgid "Enter Subtitle"
+#~ msgstr "Введите подзаголовок"
+
+#~ msgid "Enter Link"
+#~ msgstr "Введите ссылку"
+
+#~ msgid "Please enter a font size"
+#~ msgstr "Введите размер шрифта"
+
+#~ msgid ""
+#~ "For standard post type you can add your custom HTML code. The code block "
+#~ "will be placed above member's title. Disallowed: script tag and inline "
+#~ "JS, these will be sanitized."
+#~ msgstr ""
+#~ "Для стандартного типа записи вы можете добавить, свой, пользовательский "
+#~ "HTML код. Этот блок кода будет помещен в инфо панель, над именем/"
+#~ "заголовком участника. Запрещено: script тег и строчный JS, они будут "
+#~ "удалены из кода."
+
+#~ msgid "Social link"
+#~ msgstr "Социальная ссылка"
+
+#~ msgctxt "post type, general name"
+#~ msgid "AMO Team Members"
+#~ msgstr "Участники команды"
+
+#~ msgctxt "post type, general name"
+#~ msgid "AMO Team"
+#~ msgstr "AMO Команда"
+
+#~ msgctxt "button label"
+#~ msgid "Close Modal"
+#~ msgstr "Закрыть окошко"
+
+#~ msgctxt "button label"
+#~ msgid "Add New Member"
+#~ msgstr "Добавить нового"
+
+#~ msgctxt "WP menu item"
+#~ msgid "Add New Member"
+#~ msgstr "Добавление нового уастника"
+
+#~ msgctxt "verb, a button label"
+#~ msgid "Close"
+#~ msgstr "Закрыть"

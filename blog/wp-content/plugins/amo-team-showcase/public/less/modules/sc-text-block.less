@@ -1,0 +1,26 @@
+/*  3.5 SC | Text Block
+-------------------------------------------------------------------*/
+
+/*  Header
+----------------------------------*/
+.@{p}sc-text-block__header {
+	padding-left: 15px;
+	border-left: @panel-sc-heading-border-width solid transparent;
+
+	&:before {
+		left: -@panel-sc-heading-border-width;
+		border-left: @panel-sc-heading-border-width solid transparent;
+	}
+} // .sc-bio__header
+
+
+/*  Title
+----------------------------------*/
+/*  When only title is present | without subtitle  */
+.@{p}panel-sc-only-title {
+
+	.@{p}sc-text-block__header {
+		padding-left: 15px;
+	}
+
+} // .bio-only-title

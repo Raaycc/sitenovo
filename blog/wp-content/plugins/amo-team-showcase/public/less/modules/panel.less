@@ -1,0 +1,299 @@
+/*  3.3 Panel
+-------------------------------------------------------------------*/
+.amoteam-modal {
+
+	.mfp-container {
+		padding: 0 !important;
+	}
+
+	.mfp-content {
+		height: 100% !important;
+	}
+
+	&.mfp-bg {
+		z-index: 99999 !important;
+	}
+
+	&.mfp-wrap {
+		z-index: 99999 !important;
+		overflow-x: hidden !important;
+		overflow-y: auto !important;
+	}
+
+	&.@{p}modal-alt-scroll {
+		overflow-x: inherit !important;
+		overflow-y: inherit !important;
+	}
+
+} // .amoteam-modal
+
+
+.@{p}panel {
+	position: absolute;
+	max-width: 640px;
+	margin: auto;
+	width: 100%;
+	min-height: 100%;
+	top: 0;
+
+	animation-duration: 0.5s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+	backface-visibility: hidden; //causes BUGS in RTL language in Chrome
+
+} // .panel-container
+
+/* Admin Bar + Panel | Position fix */
+.admin-bar .@{p}panel {
+	top: 46px;
+	@media (min-width: 783px) {
+		top: 32px;
+	}
+}
+
+/*  Panel Alignment
+----------------------------------*/
+.@{p}panel-align-left {
+	left: 0;
+}
+
+.@{p}panel-align-center {
+	//position: relative;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+
+.@{p}panel-align-right {
+	right: 0;
+}
+
+
+/*  Header | Panel
+----------------------------------*/
+.@{p}panel__header {
+	position: relative;
+	min-height: 40px;
+	overflow: hidden;
+}
+
+.@{p}panel__img-wrap {
+	overflow: hidden;
+	max-height: 640px;
+
+	.@{p}panel__img {
+		width: 100%;
+		border-radius: 0;
+	}
+} // .panel__img-wrap
+
+.@{p}btn-panel-close {
+	//}
+}
+
+.@{p}panel__heading-wrap {
+	position: relative;
+}
+
+.@{p}panel__heading {
+	float: right;
+	transition: opacity 0.4s ease-out;
+	opacity: 0;
+
+
+	text-align: right;
+
+	.@{p}panel__heading-item {
+		line-height: 1 !important;
+		padding: 10px 20px;
+	}
+
+	.@{p}panel__title {
+		font-weight: bold;
+		text-align: center;
+		margin: 0 !important;
+	}
+
+	.@{p}panel__subtitle {
+		display: inline-block;
+		font-weight: lighter;
+		text-align: center;
+	}
+
+} //.panel__heading
+
+
+
+/*  Social icons | Header
+----------------------------------*/
+@soc-i-line-height: 1.75;
+@soc-i-font-size: 20px;
+.@{p}panel__icons {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+
+	list-style-type: none;
+
+	@media (max-width: 550px) {
+		position: static;
+		padding-right: 40px;
+		width: 100%;
+		overflow: hidden;
+
+		background: @color-main-dark;
+	}
+
+	li {
+		line-height: @soc-i-line-height;
+		font-size: @soc-i-font-size;
+		@media (max-width: 550px) {
+			float: left;
+		}
+	}
+
+	a {
+	} // a
+
+	i {
+		display: inline-block;
+		font-size: @soc-i-font-size;
+		padding: 4px 8px;
+		text-shadow: 1px 0 1px rgba(0,0,0, 0.2);
+		font-family: "amo-team-public-icons";
+
+
+		@media (max-width: 550px) {
+			padding: 2.5px 9.5px;
+		}
+		&:before {
+			line-height: @soc-i-line-height;
+		}
+	} // i
+
+} // .panel__icons
+
+.@{p}panel__custom-icons {
+	i {
+		text-shadow: none;
+	}
+
+	img {
+		max-width: 20px;
+		margin: 10px 13.5px;
+
+		@media (min-width: 551px) {
+			padding: 11.5px 0;
+			margin: auto;
+		}
+	} // img
+
+} // .panel__custom-icons
+
+.@{p}panel:not(.@{p}panel-pf-image) .@{p}panel__custom-icons {
+	img {
+		margin: 10px 13.5px;
+		padding: 0;
+	} // img
+}
+
+
+/*  Header | Post Format VARIATIONS
+----------------------------------*/
+/*  Standard, Quote  */
+.@{p}panel-pf-standard, .@{p}panel-pf-quote {
+
+	.@{p}panel__heading {
+		opacity: 1;
+	}
+
+	.@{p}panel__icons, .@{p}panel__standard {
+		position: static;
+		min-height: 40px;
+		width: 100%;
+		overflow: hidden;
+
+		//background: @color-main-dark;
+	} // .panel__icons, .panel__standard
+
+	.@{p}panel__icons {
+		padding-right: 40px;
+
+		li {
+			float: left;
+
+			i {
+				padding: 2.5px 9.5px;
+			}
+		}
+	} // .panel__icons, .panel__standard
+
+	.@{p}btn-panel-close {
+
+	} // .btn-panel-close
+
+} // .panel-pf-standard, .panel-pf-quote
+
+/*  Image  */
+.@{p}panel-pf-image {
+
+	.@{p}panel__header {
+		overflow: visible;
+	}
+
+	.@{p}panel__heading {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		float: none;
+	}
+} // .panel-pf-image
+
+/*  Quote  */
+.@{p}panel__quote_wrap {
+	padding: 45px 50px 42px;
+
+	.@{p}panel__quote {
+		margin: 0;
+		font-size: 34px;
+		line-height: 1.25;
+		font-style: italic;
+		text-align: center;
+
+		&:before, &:after {
+			line-height: 0;
+			font-size: 2em;
+			opacity: .5;
+		}
+		&:before {
+			content: open-quote;
+			vertical-align: -.35em;
+			margin-right: .35em;
+		}
+
+		&:after {
+			content: close-quote;
+			vertical-align: -.59em;
+			margin-left: .23em;
+		}
+	}
+} //.panel__quote_wrap
+
+
+/*  Content | Panel
+----------------------------------*/
+.@{p}panel__content {
+	padding: 30px 30px 50px;
+	background: inherit;
+
+	@media (min-width: 600px) {
+		padding: 40px 40px 60px;
+	}
+
+	.@{p}panel-sc:last-of-type {
+		margin-bottom: 0;
+	}
+
+} //.panel__content

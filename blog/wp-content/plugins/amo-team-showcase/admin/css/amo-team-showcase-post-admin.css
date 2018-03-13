@@ -1,0 +1,450 @@
+/**
+ * General CSS for posts/pages editor screen is included in this file.
+ */
+/*==================================================================
+▐	1. BASE
+===================================================================*/
+@font-face {
+  font-family: 'amo-team-admin-icons';
+  src: url('../fonts/amo-team-admin-icons.eot?48897822');
+  src: url('../fonts/amo-team-admin-icons.eot?48897822#iefix') format('embedded-opentype'), url('../fonts/amo-team-admin-icons.woff2?48897822') format('woff2'), url('../fonts/amo-team-admin-icons.woff?48897822') format('woff'), url('../fonts/amo-team-admin-icons.ttf?48897822') format('truetype'), url('../fonts/amo-team-admin-icons.svg?48897822#amo-team-admin-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="amoteam-icon-"]:before,
+[class*=" amoteam-icon-"]:before {
+  font-family: "amo-team-admin-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.amoteam-icon-settings:before {
+  content: '\e800';
+}
+/* '' */
+.amoteam-icon-layout-width-default-alt:before {
+  content: '\e801';
+}
+/* '' */
+.amoteam-icon-angle-down-1:before {
+  content: '\e802';
+}
+/* '' */
+.amoteam-icon-layout-accordion-separated:before {
+  content: '\e803';
+}
+/* '' */
+.amoteam-icon-angle-up:before {
+  content: '\e804';
+}
+/* '' */
+.amoteam-icon-close:before {
+  content: '\e805';
+}
+/* '' */
+.amoteam-icon-plus:before {
+  content: '\e806';
+}
+/* '' */
+.amoteam-icon-image:before {
+  content: '\e807';
+}
+/* '' */
+.amoteam-icon-help:before {
+  content: '\e808';
+}
+/* '' */
+.amoteam-icon-layout-grid2:before {
+  content: '\e809';
+}
+/* '' */
+.amoteam-icon-shortcode:before {
+  content: '\e80a';
+}
+/* '' */
+.amoteam-icon-panel:before {
+  content: '\e80b';
+}
+/* '' */
+.amoteam-icon-doc-text:before {
+  content: '\f0f6';
+}
+/* '' */
+.amoteam-icon-graduation-cap:before {
+  content: '\f19d';
+}
+/* '' */
+/* certain icons position fix */
+.amoteam-icon-margin-fix:before {
+  margin-left: 0;
+}
+/*==================================================================
+▐	2. LAYOUT
+===================================================================*/
+/*  2.1 Layout Helpers
+-------------------------------------------------------------------*/
+.amoteam-clearfix:before,
+.amoteam-clearfix:after,
+.amoteam-row:before,
+.amoteam-row:after,
+.amoteam-modal-header:before,
+.amoteam-modal-header:after {
+  content: " ";
+  display: table;
+}
+.amoteam-clearfix:after,
+.amoteam-row:after,
+.amoteam-modal-header:after {
+  clear: both;
+}
+.amoteam-margin-bottom-10 {
+  margin-bottom: 10px !important;
+}
+.amoteam-l-center-translate-v {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+/*  2.2 Layout
+-------------------------------------------------------------------*/
+[class^="amoteam"] {
+  box-sizing: border-box;
+}
+/*  Columns and Rows
+----------------------------------*/
+.amoteam-row [class*="col"] {
+  position: relative;
+  min-height: 1px;
+}
+.amoteam-col-2 {
+  float: left;
+  width: 50%;
+}
+/*==================================================================
+▐	3. MODULES
+===================================================================*/
+/*  3.1 Buttons
+-------------------------------------------------------------------*/
+.amoteam-btn {
+  padding: 8px 13px;
+  border: none;
+  background: none;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.amoteam-btn:focus {
+  color: #fff;
+  outline: none !important;
+}
+.amoteam-btn:hover {
+  color: #fff;
+}
+/*  Big panel buttons | Options
+----------------------------------*/
+.amoteam-btn--panel-big {
+  padding: 9px 14px;
+  background-color: #6d7e8f;
+}
+.amoteam-btn--panel-big:focus {
+  box-shadow: 0 0 0 1px #aecf66, 0 0 1px 1px rgba(174, 207, 102, 0.8);
+}
+.amoteam-btn--panel-big:hover {
+  background-color: #4ecdc4;
+}
+.amoteam-btn--green {
+  background-color: #aecf66;
+}
+/*  Panel button-sign | Metabox
+----------------------------------*/
+.amoteam-btn--panel-sign {
+  position: absolute;
+  height: 100%;
+  padding: 0 10px;
+  color: #4ecdc4;
+}
+.amoteam-btn--panel-sign:hover,
+.amoteam-btn--panel-sign:focus {
+  background: #556270;
+  color: #f77;
+}
+.amoteam-btn--panel-sign:disabled,
+.amoteam-btn--panel-sign[disabled] {
+  display: none;
+}
+/*  Buttons  | SPECIFIC
+-------------------------------------------------------------------*/
+/*  Panel button-sign 2 | Metabox
+----------------------------------*/
+.amoteam-btn--panel-sign--2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 35px;
+  width: 35px;
+  padding: 0;
+  background-color: #556270;
+}
+.amoteam-btn--panel-sign--2 i {
+  position: relative;
+  top: -1px;
+}
+.amoteam-panel--options .amoteam-btn--panel-sign--2 {
+  background-color: #6d7e8f;
+  color: #c7f464;
+}
+.amoteam-panel--options .amoteam-btn--panel-sign--2:hover,
+.amoteam-panel--options .amoteam-btn--panel-sign--2:focus {
+  background: #556270;
+  color: #f77;
+}
+/*  Close button | Shortcodes Modal
+----------------------------------*/
+.amoteam-btn--close-sc-modal {
+  height: 3.2em;
+  width: 3.2em;
+}
+.amoteam-btn--close-sc-modal i:before {
+  font-size: 1.2em;
+}
+/*  Metabox button with ans icon | Metabox
+----------------------------------*/
+.amoteam-btn--metabox-icon {
+  background-color: #6d7e8f;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+.amoteam-btn--metabox-icon i {
+  color: #c7f464;
+}
+.amoteam-btn--metabox-icon i:before {
+  margin-left: 10px;
+  margin-right: 0;
+}
+.amoteam-btn--metabox-icon:hover {
+  background-color: #556270;
+}
+.amoteam-btn--metabox-icon:hover i {
+  color: #4ecdc4;
+}
+/*  3.2 Modal (Bootstrap)
+-------------------------------------------------------------------*/
+.modal-open {
+  overflow: hidden;
+}
+.amoteam-modal {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10050;
+  outline: 0;
+}
+.amoteam-modal.in .modal-dialog {
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+@media (min-width: 601px) {
+  .amoteam-modal.in .modal-dialog {
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+.amoteam-modal > .modal-dialog {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  width: 250px;
+  margin: 0 !important;
+}
+@media (min-width: 601px) {
+  .amoteam-modal > .modal-dialog {
+    position: fixed;
+    width: 500px;
+    top: 50%;
+  }
+}
+.amoteam-modal .modal-content {
+  position: relative;
+  background-color: #fff;
+  border-radius: 1px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  outline: 0;
+}
+/*  Modal header
+----------------------------------*/
+.amoteam-modal-header {
+  padding: 12px 12px 12px 20px;
+  background: #6d7e8f;
+}
+@media (min-width: 601px) {
+  .amoteam-modal-header {
+    text-align: center;
+    padding: 12px;
+  }
+}
+.amoteam-modal-title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: normal;
+  color: #fff;
+}
+/*  Modal body
+----------------------------------*/
+.amoteam-modal-body {
+  position: relative;
+}
+.modal-open .amoteam-modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000;
+}
+.modal-backdrop.fade {
+  opacity: 0;
+}
+.modal-backdrop.in {
+  opacity: 0.65;
+}
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+/*  Modal  | SPECIFIC
+-------------------------------------------------------------------*/
+/*  Shortcode Generator Block | Specific
+----------------------------------*/
+.amoteam-modal__sc-block {
+  min-height: 250px;
+  cursor: pointer;
+  text-align: center;
+}
+.amoteam-modal__sc-block:hover {
+  background: #556270;
+}
+.amoteam-modal__sc-block:hover .amoteam-modal__sc-icon {
+  color: #c7f464;
+}
+.amoteam-modal__sc-block:hover .amoteam-modal__sc-title {
+  color: #fff;
+}
+.amoteam-modal__sc-block:hover .amoteam-modal__sc-help {
+  color: #fff;
+}
+.amoteam-modal__sc-block:hover .amoteam-modal__sc-help:after {
+  border-color: #fff;
+}
+.amoteam-modal__sc-block a:focus {
+  box-shadow: none;
+}
+.amoteam-modal__sc-wrap {
+  width: 90%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.amoteam-modal__sc-icon {
+  font-size: 51px;
+  line-height: 1;
+  color: #d5d8dc;
+}
+.amoteam-modal__sc-title {
+  font-size: 18px;
+  color: #6d7e8f;
+  margin: 15px 0 30px;
+}
+.amoteam-modal__sc-help {
+  position: relative;
+  font-size: 17px;
+  color: #d5d8dc;
+}
+.amoteam-modal__sc-help:after {
+  content: ' ';
+  position: absolute;
+  display: block;
+  height: 22px;
+  width: 22px;
+  border: 1px solid #d5d8dc;
+  top: 0;
+  left: 0;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.amoteam-modal__sc-help:hover {
+  color: #7be6de !important;
+}
+.amoteam-modal__sc-help:hover:after {
+  border-color: #7be6de !important;
+}
+/* Shortcode modal columns | Specific */
+@media (max-width: 600px) {
+  .AmoTeamShortcodesModal .amoteam-col-2 {
+    width: 100%;
+  }
+}
+@media (min-width: 601px) {
+  .AmoTeamShortcodesModal .amoteam-col-2:nth-child(3):before,
+  .AmoTeamShortcodesModal .amoteam-col-2:nth-child(2):before {
+    content: ' ';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-color: #d5d8dc;
+    border-style: solid;
+  }
+  .AmoTeamShortcodesModal .amoteam-col-2:nth-child(3):before {
+    top: 0;
+    right: 0;
+    border-width: 1px 1px 0 0;
+  }
+  .AmoTeamShortcodesModal .amoteam-col-2:nth-child(2):before {
+    bottom: -1px;
+    left: -1px;
+    border-width: 0 0 1px 1px;
+  }
+}
+/*==================================================================
+▐	3. SPECIFIC
+===================================================================*/
+/*# sourceMappingURL=amo-team-showcase-post-admin.css.map */

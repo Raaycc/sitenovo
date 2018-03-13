@@ -1,0 +1,363 @@
+
+/**
+ * This file overrides default admin CSS styles, specifically for RTL languages
+ */
+
+/*==================================================================
+▐	0. INITIAL SETTINGS
+===================================================================*/
+// Variables
+@import 'base/_variables';
+
+/*==================================================================
+▐	1. GENERAL STYLES
+===================================================================*/
+.@{p}shortcodes-button {
+	> span {
+		padding-right: 0;
+		padding-left: 0.27em;
+	}
+} //.amoteam-shortcodes-button
+
+
+/*==================================================================
+▐	2. OPTIONS PAGE
+===================================================================*/
+
+
+/* 2.1 Panel | general styles
+-------------------------------------------------------------------*/
+// Title
+.@{p}panel__title {
+	float: right;
+
+} //.panel__title
+
+// Content
+.@{p}panel__content {
+	padding: 30px @span-main 0 @span-main;
+	margin: 0 50px 200px 0;
+
+	@media (min-width: 446px) {
+		margin: 0 50px 130px 0;
+	}//@media
+
+	@media (min-width: 550px) {
+		margin: 0 65px 130px 0;
+	}//@media
+
+
+	@media (min-width: @media-min-breaker) {
+		padding: 30px 35px 0 @span-main;
+		margin: 0 175px 140px 0;
+	}
+
+} //.panel__content
+
+// Footer
+.@{p}panel__footer {
+	right: auto;
+	left: 0;
+}//.panel__footer
+
+// Panel Buttons
+.@{p}panel__buttons {
+	> .@{p}btn {
+		float: right;
+		margin-left: 0;
+		margin-right: 5px;
+	}
+} //.panel__buttons
+
+
+/* 2.2 Options Panel | specific styles
+-------------------------------------------------------------------*/
+
+.@{p}panel--options {
+
+	.@{p}panel__buttons {
+		float: right;
+
+		> .@{p}btn:first-child {
+			margin-left: auto;
+			margin-right: 0;
+		}
+
+		> .@{p}btn {
+			@media (max-width: 445px) {
+				margin-left: auto;
+				margin-right: 0;
+			}//@media
+		}//.btn
+
+		@media (min-width: 640px) {
+			float: left;
+			padding: 17.5px 15px 17.5px 0;
+		}//@media
+	}//.panel__buttons
+
+} // .options-panel
+
+.@{p}plugin-version {
+	right: auto;
+	left: 20px;
+
+	@media (min-width: 446px) {
+		left: auto;
+		right: 0;
+	}//@media
+
+} //.plugin-version
+
+
+/*  2.3 Settings/Inputs
+-------------------------------------------------------------------*/
+/*==================================================================
+▐	4. SETTINGS / INPUTS
+===================================================================*/
+
+.@{p}setting {
+	@media (min-width: 700px) {
+		float: right;
+	}
+
+	.@{p}setting__input {
+		padding-left: inherit;
+		padding-right: 12px;
+	}
+
+
+} //.setting__input
+
+.@{p}setting__desc {
+	@media (min-width: 700px) {
+		float: right;
+		padding-left: inherit;
+		padding-right: 50px;
+	}
+} //.setting__desc
+
+/*  Input - Color Picker
+----------------------------------*/
+.@{p}setting-group {
+
+	.wp-picker-holder {
+		@media (max-width: 400px) {
+			left: auto;
+			right: 5%;
+		}//@media
+	} //.wp-picker-holder
+
+} //.setting-group
+
+
+/*  Switcher input - ON / OFF
+----------------------------------*/
+.@{p}setting--switch {
+
+	.@{p}setting__label-switch {
+		float: right;
+
+		&:first-of-type {
+			border-right: @switch-border;
+			border-left: none;
+
+		}
+
+		&:last-of-type {
+			border-left: @switch-border;
+			border-right: none;
+		}
+
+	}//.setting__label-switch
+} //.setting--switch
+
+
+/*  Select Input field
+----------------------------------*/
+.@{p}setting__wrap {
+
+	.@{p}icon-angle-down-1 {
+		left: 5px;
+		right: auto;
+	}
+
+} //.setting__wrap
+
+
+/*  Social Icons | Special Block
+----------------------------------*/
+.@{p}social-icon__group {
+
+	.@{p}social-icon__heading-wrap {
+
+		.@{p}social-icon__collapse {
+			right: auto;
+			left: 0;
+		} //.icon-angle-up
+
+		.@{p}social-icon__close {
+			right: auto;
+			left: 38px;
+		} //.social-icon__close
+
+	} //.social-icon__heading-wrap
+
+} //.social-icon__group
+
+/*==================================================================
+▐	4. TABS
+===================================================================*/
+
+/* Base class
+---------------------------------*/
+.@{p}nav {
+	padding-left: inherit;
+	padding-right: 0; // Override default ul/ol
+
+	> li {
+
+		> a {
+			@media (min-width: 550px) {
+				padding: 13px 20px 13px 15px;
+			}//@media
+		} //a
+
+		[class^="@{p}icon-"]:before, [class*=" @{p}icon-"]:before {
+			margin-right: 0;
+			margin-left: 10px;
+		} // [class]
+
+	} // > li
+} //.nav
+
+
+/*  Tabs variations
+----------------------------------*/
+.@{p}tabs--arrow {
+	// Active state
+	.active {
+		&:after {
+			right: auto !important;
+			left:  0 !important;
+			border-right-color: transparent !important;
+			border-left-color: @color-white !important;
+
+		} //:after
+	} //.tab-active
+} //.tabs--arrow
+
+
+/*==================================================================
+▐	5. TEAM MEMBER | SETTINGS
+===================================================================*/
+/* Team Member metabox specific styles */
+
+#amo-team-member-settings {
+
+	.@{p}panel__sidebar {
+		border-right:none;
+		border-left: 1px solid @color-middle-grey;
+	} //.panel__sidebar
+
+
+	.@{p}panel__content {
+		padding: 30px 35px 0 0;
+	} //.panel__content
+
+} //#amo-team-member-settings
+
+/*==================================================================
+▐	7. WARNINGS / NOTICES
+===================================================================*/
+
+/* Metabox | Notice
+----------------------------------*/
+.@{p}social-icons__limit-warning {
+	@media (min-width: 700px) {
+		float: right;
+	}
+} //.social-icons__limit-warning
+
+/*==================================================================
+▐	8. ADMIN ICONIC FONT
+===================================================================*/
+.@{p}icon-margin-fix {
+	&:before {
+		margin-left: auto;
+		margin-right: -10px;
+	}
+}
+
+/*==================================================================
+▐	9. LAYOUT
+===================================================================*/
+/*  Columns and Rows
+----------------------------------*/
+.@{p}col-2 {
+	float: right;
+	width: 50%;
+} //.col-2
+
+/*==================================================================
+▐	10. MODAL
+===================================================================*/
+/*  Modal header
+----------------------------------*/
+// Top section of the modal w/ title and dismiss
+.@{p}modal-header {
+	padding: 12px 20px 12px 12px;
+} //.modal-header
+
+/*  Shortcode Generator Block | Specific
+----------------------------------*/
+.@{p}modal__sc-help {
+	&:after {
+		top: -1px;
+	}
+} //.modal__sc-help
+
+/* Shortcode modal columns | Specific */
+.AmoTeamShortcodesModal {
+	.@{p}col-2 {
+		// Shortcode blocks delimiters
+		@media (min-width: 601px) {
+
+			&:nth-child(3) {
+				&:before {
+					top: 0;
+					right: auto;
+					left:  0;
+					border-width: 1px 0 0 1px;
+				}
+			} //:nth-child(3)
+
+			&:nth-child(2) {
+				&:before {
+					bottom: -1px;
+					left: auto;
+					right: -1px;
+					border-width: 0 1px 1px 0;
+				}
+			} //:nth-child(2)
+		} // @media
+
+	} //.col-2
+} //.AmoTeamShortcodesModal
+
+/*==================================================================
+▐	11. BUTTONS
+===================================================================*/
+
+/*  Metabox button with ans icon | Metabox
+----------------------------------*/
+.@{p}btn--metabox-icon {
+	i {
+		color: @color-main-green-2;
+		&:before {
+			margin-left: 0;
+			margin-right: 10px;
+		}
+	}
+
+} //.btn--metabox-icon

@@ -1,0 +1,254 @@
+/* 3.7 Panel
+-------------------------------------------------------------------*/
+// Base class
+.@{p}panel {
+	min-height: 600px;
+
+	position: relative;
+	overflow: hidden;
+
+	background-color: @color-white;
+}
+
+// Heading
+.@{p}panel__heading {
+	min-height: 70px;
+	padding: 0 @span-main;
+	overflow: hidden;
+
+	background-color: @color-main-dark;
+}
+
+// Title
+.@{p}panel__title {
+	float: left;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 24px 0 0;
+
+	@media (min-width: 446px) {
+		padding: 24px 0 5px;
+	}//@media
+
+
+	@media (min-width: 660px) {
+		padding: 24px 0 24px;
+	}
+
+	font-size: 21px;
+	font-weight: @font-weight-normal;
+	color: @color-white;
+
+	span {
+		color: @color-main-green-2;
+	}
+} //.panel__title
+
+// Body
+.@{p}panel__body {
+	height: 100%;
+	width: 100%;
+
+	overflow: hidden;
+	&:extend(.amoteam-clearfix all);
+}
+
+
+// Navigation sidebar
+.@{p}panel__sidebar {
+	position: absolute;
+	width: 50px;
+	min-height: 500px;
+	height: 100%;
+
+	@media (min-width: 550px) {
+		width: 65px;
+	}//@media
+
+	@media (min-width: @media-min-breaker) {
+		width: 175px;
+	}
+}
+
+// Contents
+.@{p}panel__content {
+	padding: 30px @span-main 0 @span-main;
+	margin: 0 0 200px 50px;
+
+	@media (min-width: 446px) {
+		margin: 0 0 130px 50px;
+	}//@media
+
+	@media (min-width: 550px) {
+		margin: 0 0 130px 65px;
+	}//@media
+
+
+
+	@media (min-width: @media-min-breaker) {
+		padding: 30px @span-main 0 35px;
+		margin: 0 0 140px 175px;
+	}
+} //.panel__content
+
+// Footer
+.@{p}panel__footer {
+	padding: 0 @span-main;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+
+	@media ( max-width: 639px ) {
+		padding: 0 @span-main 3px @span-main;
+		width: 100%;
+		background: @color-main-dark;
+	}
+}//.panel__footer
+
+
+// Panel Buttons
+.@{p}panel__buttons {
+	overflow: hidden;
+
+	> .@{p}btn {
+		display: block;
+		float: left;
+		margin-left: 5px;
+	}
+} //.panel__buttons
+
+
+/*  Options Panel
+----------------------------------*/
+/* Option Panel specific styles */
+.@{p}panel--options {
+	max-width: 1200px;
+	//margin-bottom: 50px;
+
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+
+	.@{p}panel__sidebar {
+		position: absolute;
+		width: 50px;
+		min-height: 500px;
+		height: 100%;
+
+		background-color: @color-main-dark-2;
+
+		@media (min-width: 550px) {
+			width: 65px;
+		}//@media
+
+		@media (min-width: @media-min-breaker) {
+			width: 175px;
+		}
+	}
+
+
+	.@{p}panel__buttons {
+		padding: @span-main 0 ;
+		float: left;
+		clear: both;
+
+		> .@{p}btn:first-child {
+			margin-left: 0;
+		}
+
+		> .@{p}btn {
+			@media (max-width: 445px) {
+				float: none;
+				margin-left: 0;
+				margin-top: 5px;
+			}//@media
+		}//.btn
+
+		@media (min-width: 640px) {
+			float: right;
+			padding: 17.5px 0 17.5px 15px;
+			clear: none;
+		}//@media
+	}//.panel__buttons
+
+
+} // .options-panel
+
+.@{p}plugin-version {
+	position: absolute;
+	bottom: 25px;
+	right: 20px;
+	z-index: 10;
+
+	color: @color-white;
+	font-size: 14px;
+	text-align: center;
+
+	@media (min-width: 446px) {
+		left: 0;
+		bottom: 100px;
+		width: 50px;
+		font-size: 12px;
+
+	}//@media
+
+	@media (min-width: 550px) {
+		width: 65px;
+	}//@media
+
+	@media (min-width: 640px) {
+		bottom: 30px;
+		font-size: 14px;
+	}//@media
+
+
+	@media (min-width: @media-min-breaker) {
+		width: 175px;
+		font-size: 14px;
+	}
+
+} //.plugin-version
+
+
+
+/*  Team Member metabox
+----------------------------------*/
+/* Team Member metabox specific styles */
+
+#amo-team-member-settings {
+	h2 {
+		border: none;
+
+		background: @color-main-dark;
+		color: @color-white;
+		//font-size: 15px;
+		text-transform: uppercase;
+	} //h2
+
+	.inside {
+		margin: 0;
+		padding: 0;
+	} //.inside
+
+	.@{p}panel__sidebar {
+		margin-top: 30px;
+		border-right: 1px solid @color-middle-grey;
+	} //.panel__sidebar
+
+
+	.@{p}panel__content {
+		padding-right: 0;
+
+		//@media (min-width: @media-min-breaker) {
+		//	padding-right: 0;
+		//}
+	} //.panel__content
+
+	.toggle-indicator {
+		color: @color-white;
+
+		&:hover {
+			color: @color-main-green-2;
+		}
+	} //.toggle-indicator
+
+
+} //#amo-team-member-settings
